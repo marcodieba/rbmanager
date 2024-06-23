@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load mathfilters %}
+{% block container %}
+<div class="d-sm-flex align-items-center mb-4 no-print">
+  <h1 class="h3 mb-0 text-gray-800"></h1>
+  <button onclick="window.print()" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i ></i> Gerar Relatório</button>
+</div>
+<div class="card mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Controle Reabanho</h6>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Fazenda</th>
+            <th>Animal</th>
+            <th>Qt.Anterior</th>
+            <th>Entrada</th>
+            <th>Saida</th>
+            <th>Qt.Hoje</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        {% for obj in dados %}
+              <tr>
+                {% if obj.animal != 'TOURO' and obj.animal != 'NOVILHA' %}
+                <span style="visibility:hidden;">{{ forloop.counter }}</span>
+                  <th style="font-size:12px;" scope="row">19/04/2024</th><!--  {{obj.data|date:"d/m/Y"}} -->
+                  <td style="font-size:12px;">{{obj.fazenda_filtro}}</td>
+                  <td style="font-size:12px;">{{obj.animal}}</td>
+                  {% if obj.total_entrada.q or obj.total_saida.q %}
+                    <td class="qtanterior">{{obj.faz.total_entrada}}</td>
+                  {% else %}
+                    <td class="qtanterior">{{obj.total_anterior}}</td>
+                  {% endif %}
+                  <td class="qtentradat">{{obj.total_entrada}}</td>
+                  <td class="qtsaidat">{{obj.total_saida}}</td>
+                  <td class="qttotal">{{obj.total}}</td>
+                  {% if obj.animal == 'VACA' %}
+                    </tbody>
+                      <tbody>
+                        <tr>
+                          <td style="border-bottom:1px solid #ccc; Background:#000;" align=right colspan=6></td>
+                          <td class="text-center" style="border-bottom:1px solid #ccc; color:#fff; padding:0px; Background:#000;">Total: <span>{{ obj.total_fazenda }}</span> 
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Data</th>
+                          <th>Fazenda</th>
+                          <th>Animal</th>
+                          <th>Qt.Anterior</th>
+                          <th>Entrada</th>
+                          <th>Saida</th>
+                          <th>Qt.Hoje</th>
+                        </tr>
+                      </tbody>
+                  {% endif %}
+              {% endif %}
+        {% endfor %}
+        {% comment %} <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>Qt. Anterior</th>
+          <th>Qt. Entrada</th>
+          <th>Qt. Saida</th>
+          <th>Qt. Geral</th>
+        </tr> {% endcomment %}
+        <tr>
+          <th scope="row"></th>
+          <td></td>
+          <td></td>
+          <td id="qtdanterior"></td>
+          <td id="qtdentrada"></td>
+          <td id="qtdsaida"></td>
+          <td id="qtdtotal"></td>
+        </tr>
+
+    </table>
+  </div>
+</div>
+<script src="{% static 'static_rebanho/vendor/jquery/jquery.min.js' %}"></script>
+<script type="text/javascript">
+  $(function(){
+
+     var valorCalculado = 0;
+     var qtsaida = 0;
+     var qtentrada = 0;
+     var qtanterior = 0;
+
+     $( ".qttotal" ).each(function() {
+       valorCalculado += parseInt($( this ).text());
+     });
+     $( ".qtsaidat" ).each(function() {
+       qtsaida += parseInt($( this ).text());
+     });
+     $( ".qtentradat" ).each(function() {
+       qtentrada += parseInt($( this ).text());
+     });
+     $( ".qtanterior" ).each(function() {
+       qtanterior += parseInt($( this ).text());
+     });
+     $( "#qtdtotal" ).text(valorCalculado);
+      $( "#qtdsaida" ).text(qtsaida);
+      $( "#qtdentrada" ).text(qtentrada);
+      $( "#qtdanterior" ).text(qtanterior);
+   });
+
+
+</script>
+<script>
+ function printDiv(divName) {
+ var printContents = document.getElementById(divName).innerHTML;
+ var originalContents = document.body.innerHTML;
+
+ document.body.innerHTML = printContents;
+
+ window.print();
+
+ document.body.innerHTML = originalContents;
+      }
+  </script>
+{% endblock %}

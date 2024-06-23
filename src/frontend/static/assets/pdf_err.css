@@ -1,0 +1,229 @@
+html{
+  overflow-y:hidden !important;
+  overflow-x:hidden !important;
+}
+.dados_empresa{
+  /* float: left; */
+}
+.dados_empresa > img{
+  float: left !important;
+  width: 200px;
+  margin-right:100px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.endereco_emp{
+  font-size: 9px !important;
+  color: #2f15a1 !important;
+  width: 560px;
+  border: 1px solid;
+  margin-bottom: 5px;
+  padding-top:5px;
+  line-height: 1.4;
+}
+.cabecalho{
+  border:1px solid #888888;
+  width: 550px;
+  padding: 5px;
+  line-height: 2;
+  float: left;
+  margin-bottom: 5px;
+}
+.dados_nome{
+  border: 1px solid #bf5f00;
+  width: 225px;
+  padding-left: 2px;
+  height: 15px;
+  margin-right: 5px;
+  font-size: 9px;
+  float: left;
+}
+.dados_cnpj{
+  border: 1px solid #bf5f00;
+  width: 150px;
+  height: 15px;
+  padding-left: 2px;
+  margin-right: 5px;
+  font-size: 9px;
+  float: left;
+}
+.dados_esc{
+  border: 1px solid #bf5f00;
+  width: 148px;
+  height: 15px;
+  padding-left: 2px;
+  margin-right: 5px;
+  font-size: 9px;
+  float: left;
+}
+.dados_end{
+  border: 1px solid #bf5f00;
+  width: 175px;
+  height: 15px;
+  padding-left: 2px;
+  margin-right: 5px;
+  font-size: 9px;
+  float: left;
+}
+.dados_bairro{
+  border: 1px solid #bf5f00;
+  width: 146px;
+  height: 15px;
+  padding-left: 2px;
+  margin-right: 5px;
+  font-size: 9px;
+  float: left;
+}
+.dados_cep{
+  border: 1px solid #bf5f00;
+  width: 70px;
+  height: 15px;
+  padding-left: 2px;
+  margin-right: 5px;
+  font-size: 9px;
+  float: left;
+}
+.dados_fone{
+  border: 1px solid #bf5f00;
+  width: 122px;
+  height: 15px;
+  padding-left: 2px;
+  margin-right: 5px;
+  font-size: 9px;
+  float: left;
+}
+.dados_cidade{
+  border: 1px solid #bf5f00;
+  width: 224px;
+  height: 15px;
+  padding-left: 2px;
+  margin-right: 5px;
+  font-size: 9px;
+  float: left;
+}
+.dados_uf{
+  border: 1px solid #bf5f00;
+  width: 150px;
+  height: 15px;
+  padding-left: 2px;
+  margin-right: 5px;
+  font-size: 9px;
+  float: left;
+}
+.dados_email{
+  border: 1px solid #bf5f00;
+  width: 148px;
+  height: 15px;
+  padding-left: 2px;
+  margin-right: 5px;
+  font-size: 9px;
+  float: left;
+}
+.dados_nome_titu{
+  float: left;
+  padding-right: 219px;
+  font-size: 5px;
+}
+.dados_cnpj_titu{
+  float: left;
+  padding-right: 145px;
+  font-size: 5px;
+}
+.dados_esc_titu{
+  float: left;
+  padding-right: 100px;
+  font-size: 5px;
+}
+.dados_end_titu{
+  float: left;
+  padding-right: 155px;
+  font-size: 5px;
+}
+.dados_bairro_titu{
+  float: left ;
+  padding-right: 133px;
+  font-size: 5px;
+}
+.dados_cep_titu{
+  float: left;
+  padding-right: 68px;
+  font-size: 5px;
+}
+.dados_fone_titu{
+  float: left;
+  padding-right: 50px;
+  font-size: 5px;
+}
+.dados_cidade_titu{
+  float: left;
+  padding-right: 213px;
+  font-size: 5px;
+}
+.dados_uf_titu{
+  float: left;
+  padding-right: 138px;
+  font-size: 5px;
+}
+.dados_email_titu{
+  float: left;
+  padding-right: 100px;
+  font-size: 5px;
+}
+.conteudo{
+  width: 563px;
+}
+table {
+  margin-bottom: 0.3em;
+  width: 563px;
+  height: 1px;
+}
+
+table td {
+  padding: 1px;
+}
+
+.table1 {
+  border: 0.2px solid red;
+}
+
+.table2,.table2 td {
+  border: 0.2px solid silver;
+  /* border-collapse: collapse; */
+  font-size: 7px;
+  padding: 0 5px;
+}
+.table2 tr {
+  height:7px;
+}
+
+.table2 th {
+  background-color: lightblue;
+  border: 0.2px solid #000;
+  font-size: 7px;
+}
+
+.obs{
+  margin: -28px 0 0;
+  width: 400px;
+  /* border:0.2px solid; */
+}
+.obs > li{
+  /* width: 300px; */
+  list-style: none;
+  border-bottom: 1px solid;
+  font-size:10px;
+}
+.fat{
+  margin: -28px 0 30px;
+  padding: 1px 10px ;
+  border: 1px solid;
+}
+div > p{
+  font-size: 10px;
+}
+@media screen and (max-width: 1140px) { 
+	.container-fluid { font-size: 100px }
+}
+@media screen and (max-width: 600px) { 
+	.container-fluid{ font-size: 50px !important }
+}

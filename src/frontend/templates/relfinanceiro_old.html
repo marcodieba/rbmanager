@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load mathfilters %}
+{% block container %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="container">
+  <div class="">
+    <form id="search-form" class="needs-validation" method="get">
+      <div class="form-row">
+        <div class="col-md-1 mb-3" style="margin-right:15px;">
+          <button id="search-btn" type="button" class="btn btn-outline-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+          </svg>
+          <span class="visually-hidden">BUSCAR</span>
+          </button>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <!-- <label for="validationTooltip01">BUSCAR</label> -->
+          <input type="text" id="search" name="search" class="form-control" value="{{ request.GET.search }}">
+        </div>
+        <div class="col-md-6 mb-3">
+          <input class="btn btn-primary" type="button" style="float:right; height:38px;" onclick="printDiv('printableArea')" value="Imprimir" />
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="printableArea" class="table-responsive-md">
+
+    <table class="table table-hover table-striped table-dark">
+      <thead>
+        <tr>
+          <th scope="row" colspan=12><h2 class="text-center">RELATÓRIO FINANCEIRO</h2></th>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <th scope="col">Data</th>
+          <th scope="col">Nº Nota</th>
+          <th scope="col">Fazenda</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Entrada</th>
+          <th scope="col">Saida</th>
+          <!-- <th scope="col">Saldo</th> -->
+        </tr>
+      </thead>
+      <tbody>
+        {% for obj in dados %}
+
+              <tr>
+                <span style="visibility:hidden;">{{ forloop.counter }}</span>
+                  <th style="font-size:12px;" scope="row">{{obj.data|date:"d/m/Y"}}</th>
+                  <td style="font-size:12px;">{{obj.nr_nota}}</td>
+                  <td style="font-size:12px;">{{obj.fazenda}}</td>
+                  <td>{{obj.descricao}}</td>
+                  <td class="qtentradat">{{obj.entrada}}</td>
+                  <td class="qtsaidat">{{obj.saida}}</td>
+                  <!-- <td class="qttotal">{{obj.resultado}}</td> -->
+                    <!-- {% if forloop.counter|divisibleby:4 %}
+          </tbody></tr><tbody><tr><td style="border-bottom:1px solid #ccc; Background:#fff;" align=right colspan=6></td><td style="border-bottom:1px solid #ccc; color:#000; padding:0px; Background:#fff;">Total: {{ obj.total_fazenda}}</td</tbody>
+            {% endif %} -->
+
+        {% endfor %}
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col">Qt. Entrada</th>
+          <th scope="col">Qt. Saida</th>
+          <th scope="col">Qt. Geral</th>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td id="qtdentrada" class="qttotal"></td>
+          <td id="qtdsaida" class="qttotal"></td>
+          <td id="qtdtotal"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script>
+  $( document ).ready(function() {
+      var searchBtn = $('#search-btn');
+      var searchForm = $('#search-form');
+      // var filter     = $('#filter');
+
+      $(searchBtn).on('click', function() {
+        searchForm.submit();
+      });
+
+    });
+</script>
+<script type="text/javascript">
+  $(function(){
+
+
+     var qtsaida = 0;
+     var qtentrada = 0;
+
+     $( ".qtsaidat" ).each(function() {
+       qtsaida += parseInt($( this ).text());
+     });
+     $( ".qtentradat" ).each(function() {
+       qtentrada += parseInt($( this ).text());
+     });
+
+      var valorCalculado = qtentrada - qtsaida;
+
+      $( "#qtdsaida" ).text(qtsaida);
+      $( "#qtdentrada" ).text(qtentrada);
+      $( "#qtdtotal" ).text(valorCalculado);
+   });
+
+
+</script>
+<script>
+ function printDiv(divName) {
+ var printContents = document.getElementById(divName).innerHTML;
+ var originalContents = document.body.innerHTML;
+
+ document.body.innerHTML = printContents;
+
+ window.print();
+
+ document.body.innerHTML = originalContents;
+      }
+  </script>
+{% endblock %}

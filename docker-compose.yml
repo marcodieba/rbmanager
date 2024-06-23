@@ -1,0 +1,44 @@
+version: "3.8"  # Atualizei a versão para 3.8 para mais recursos e estabilidade
+services:
+  db:
+    image: postgres:latest
+    env_file:
+      - ./docker.env
+    ports:
+      - 127.0.0.1:5432:5432
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:latest
+    env_file:
+      - ./docker.env
+    ports:
+      - 127.0.0.1:6379:6379
+    volumes:
+      - redis_data:/data
+
+  web:
+    build: .
+    image: rbmanager:latest  # Nome da imagem para o seu aplicativo Django
+    env_file:
+      - ./docker.env
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    ports:
+      - 0.0.0.0:8001:8000
+    volumes:
+      - ./src:/srv:delegated
+    command: ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+    depends_on:
+      - db
+      - redis
+
+volumes:
+  db_data:
+    driver: local
+  redis_data:
+    driver: local

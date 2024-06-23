@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load mathfilters %}
+{% block container %}
+
+<div class="container no-print">
+    <a href="{% url 'relfinanceiro' %}">Remover Filtros</a>
+    <div class="row">
+        <form method="get" class="form-row w-100">
+            <div class="col-md-6 mb-3">
+                <label for="filtro">Filtrar Por Fazenda</label>
+                <select name="filtro" id="filtro" class="form-control" onchange="this.form.submit()">
+                    <option value="0">{{ request.GET.filtro }}</option>
+                    <option value="FAZ. ALVORADA">FAZ. ALVORADA</option>
+                    <option value="FAZ. ASA BRANCA">FAZ. ASA BRANCA</option>
+                    <option value="FAZ. MOSQUITO">FAZ. MOSQUITO</option>
+                    <option value="FAZ. MR">FAZ. MR</option>
+                    <option value="FAZ. SAO BENTO">FAZ. SÃO BENTO</option>
+                </select>
+            </div>
+        </form>
+        <form method="get" class="form-row w-100">
+            <div class="col-md-6 mb-3">
+                <label for="data_inicio">Data Inicial</label>
+                <input type="date" name="data_inicio" id="data_inicio" class="form-control">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="data_fim">Data Final</label>
+                <input type="date" name="data_fim" id="data_fim" class="form-control">
+            </div>
+            <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-sm btn-primary shadow-sm"><i class="fas fa-search"></i> Filtrar</button>
+            </div>
+        </form>
+        <div class="col-md-12 text-right mb-3">
+            <button onclick="window.print()" class="btn btn-sm btn-primary shadow-sm"><i class="fas fa-print"></i> Gerar Relatório</button>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Relatório Financeiro</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Nº Nota</th>
+                        <th>Fazenda</th>
+                        <th>Descrição</th>
+                        <th>Entrada</th>
+                        <th>Saída</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Data</th>
+                        <th>Nº Nota</th>
+                        <th>Fazenda</th>
+                        <th>Descrição</th>
+                        <th>Entrada</th>
+                        <th>Saída</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    {% for obj in dados %}
+                    <tr>
+                        <td>{{ obj.data|date:"d/m/Y" }}</td>
+                        <td>{{ obj.nr_nota }}</td>
+                        <td>{{ obj.fazenda }}</td>
+                        <td>{{ obj.descricao }}</td>
+                        <td>R$ {{ obj.entrada|floatformat:2 }}</td>
+                        <td>R$ {{ obj.saida|floatformat:2 }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="p-2 flex-fill justify-content-end bd-highlight" style="border: 1px solid lavender; margin-top: 10px;">
+            <strong>Saldo:</strong> R$ {{ saldo|floatformat:2 }}
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'static_rebanho/vendor/jquery/jquery.min.js' %}"></script>
+<script type="text/javascript">
+    $(function() {
+        var qtsaida = 0;
+        var qtentrada = 0;
+
+        $(".qtsaidat").each(function() {
+            qtsaida += parseFloat($(this).text());
+        });
+        $(".qtentradat").each(function() {
+            qtentrada += parseFloat($(this).text());
+        });
+
+        var valorCalculado = parseFloat(qtentrada) - parseFloat(qtsaida);
+
+        $("#qtdsaida").text(qtsaida.toFixed(2));
+        $("#qtdentrada").text(qtentrada.toFixed(2));
+        $("#qtdtotal").text(valorCalculado.toFixed(2));
+    });
+</script>
+{% endblock %}

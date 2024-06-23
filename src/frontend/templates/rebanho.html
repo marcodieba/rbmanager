@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block container %}
+<div class="container">
+   <div>
+     <h2 class="text-center">CONTROLE DE REBANHO</h2>
+     <br>
+     <form method="post" class="needs-validation">
+       {% csrf_token %}
+       <div class="form-row">
+         <div class="col-md-2 mb-3">
+           <label for="validationTooltip01">MOVIMENTO</label>
+           {{ form.tipo_movimento }}
+         </div>
+         <div class="col-md-2 mb-3">
+           <label for="validationTooltip01">DATA</label>
+           <input type="date" name="data" class="form-control" id="validationTooltip03">
+         </div>
+         <div class="col-md-6 mb-3">
+           <label for="validationTooltip01">FAZENDA</label>
+           {{ form.fazenda }}
+         </div>
+       </div>
+       <div id="items-container">
+         <div class="form-row item">
+           <div class="col-md-4 mb-3">
+             <label for="validationTooltip01">ANIMAL</label>
+             {{ form.animal }}
+           </div>
+           <div class="col-md-2 mb-3">
+             <label for="validationTooltip02">ENTRADA</label>
+             <input type="text" name="entrada[]" class="form-control" id="validationTooltip03" value="0" required>
+             <div class="valid-tooltip">
+               Tudo certo!
+             </div>
+           </div>
+           <div class="col-md-2 mb-3">
+             <label for="validationTooltip03">SAIDA</label>
+             <input type="text" name="saida[]" class="form-control" id="validationTooltip04" value="0" required>
+             <div class="invalid-tooltip">
+               Por favor, informe.
+             </div>
+           </div>
+           <div class="col-md-4 mb-3">
+             <label for="validationTooltip02">Observação:</label>
+             <textarea name="obs[]" class="form-control"></textarea>
+           </div>
+           <div class="col-md-2 mb-3">
+             <button type="button" class="btn btn-danger remove-item">Remover</button>
+           </div>
+         </div>
+       </div>
+       <button type="button" class="btn btn-success" id="add-item">Adicionar Item</button>
+       <br><br>
+       <button class="btn btn-primary" type="submit">Enviar</button>
+     </form>
+   </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('add-item').addEventListener('click', function() {
+        var container = document.getElementById('items-container');
+        var newItem = document.querySelector('.item').cloneNode(true);
+        newItem.querySelectorAll('input, textarea').forEach(input => input.value = '');
+        container.appendChild(newItem);
+
+        var removeButtons = container.querySelectorAll('.remove-item');
+        removeButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                button.parentElement.parentElement.remove();
+            });
+        });
+    });
+
+    var removeButtons = document.querySelectorAll('.remove-item');
+    removeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            button.parentElement.parentElement.remove();
+        });
+    });
+});
+</script>
+{% endblock %}
