@@ -1,0 +1,44 @@
+[
+{
+  "model": "rebanho.animal",
+  "pk": 1,
+  "fields": {
+    "animal": "BEZERRA"
+  }
+},
+{
+  "model": "rebanho.animal",
+  "pk": 2,
+  "fields": {
+    "animal": "BEZERRO"
+  }
+},
+{
+  "model": "rebanho.animal",
+  "pk": 3,
+  "fields": {
+    "animal": "BOI"
+  }
+},
+{
+  "model": "rebanho.animal",
+  "pk": 4,
+  "fields": {
+    "animal": "VACA"
+  }
+},
+{
+  "model": "rebanho.animal",
+  "pk": 5,
+  "fields": {
+    "animal": "NOVILHA"
+  }
+},
+{
+  "model": "rebanho.animal",
+  "pk": 6,
+  "fields": {
+    "animal": "TOURO"
+  }
+}
+]

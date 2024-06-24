@@ -30,7 +30,7 @@
               <tr>
                 {% if obj.animal != 'TOURO' and obj.animal != 'NOVILHA' %}
                 <span style="visibility:hidden;">{{ forloop.counter }}</span>
-                  <th style="font-size:12px;" scope="row">19/04/2024</th><!--  {{obj.data|date:"d/m/Y"}} -->
+                  <th style="font-size:12px;" scope="row">{{obj.data|date:"d/m/Y"}}</th><!--  {{obj.data|date:"d/m/Y"}} -->
                   <td style="font-size:12px;">{{obj.fazenda_filtro}}</td>
                   <td style="font-size:12px;">{{obj.animal}}</td>
                   {% if obj.total_entrada.q or obj.total_saida.q %}

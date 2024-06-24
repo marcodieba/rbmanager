@@ -38,7 +38,7 @@ class Quantidade(models.Model):
     tipo_movimento = models.ForeignKey('Movimento', null=False, blank=True, on_delete=models.CASCADE)
     fazenda = models.ForeignKey('Fazenda', null=False, blank=True, on_delete=models.CASCADE)
     animal = models.ForeignKey('Animal', null=False, blank=True, on_delete=models.CASCADE)
-    data = models.DateField(('Data'), auto_now_add=True, null=True)
+    data = models.DateField(('Data'), auto_now_add=False, null=True)
     modificado = models.DateTimeField(('Modificado em'), auto_now=True)
     author = models.ForeignKey('auth.User', null=True, blank=True, on_delete=models.CASCADE)
     entrada = models.IntegerField(('Entrada'), default=0, null=True, blank=True)

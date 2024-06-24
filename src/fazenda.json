@@ -1,0 +1,37 @@
+[
+{
+  "model": "rebanho.fazenda",
+  "pk": 1,
+  "fields": {
+    "fazenda": "FAZ. ALVORADA"
+  }
+},
+{
+  "model": "rebanho.fazenda",
+  "pk": 2,
+  "fields": {
+    "fazenda": "FAZ. ASA BRANCA"
+  }
+},
+{
+  "model": "rebanho.fazenda",
+  "pk": 3,
+  "fields": {
+    "fazenda": "FAZ. MOSQUITO"
+  }
+},
+{
+  "model": "rebanho.fazenda",
+  "pk": 4,
+  "fields": {
+    "fazenda": "FAZ. MR"
+  }
+},
+{
+  "model": "rebanho.fazenda",
+  "pk": 5,
+  "fields": {
+    "fazenda": "FAZ. S\u00c3O BENTO"
+  }
+}
+]

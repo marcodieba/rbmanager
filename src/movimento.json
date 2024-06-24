@@ -1,0 +1,44 @@
+[
+{
+  "model": "rebanho.movimento",
+  "pk": 1,
+  "fields": {
+    "tipo_movimento": "VENDA"
+  }
+},
+{
+  "model": "rebanho.movimento",
+  "pk": 2,
+  "fields": {
+    "tipo_movimento": "COMPRA"
+  }
+},
+{
+  "model": "rebanho.movimento",
+  "pk": 3,
+  "fields": {
+    "tipo_movimento": "MORTE"
+  }
+},
+{
+  "model": "rebanho.movimento",
+  "pk": 4,
+  "fields": {
+    "tipo_movimento": "NASCIMENTO"
+  }
+},
+{
+  "model": "rebanho.movimento",
+  "pk": 5,
+  "fields": {
+    "tipo_movimento": "TRANSF.SAIDA"
+  }
+},
+{
+  "model": "rebanho.movimento",
+  "pk": 6,
+  "fields": {
+    "tipo_movimento": "TRANSF.ENTRADA"
+  }
+}
+]

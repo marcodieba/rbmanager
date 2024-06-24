@@ -1,0 +1,9872 @@
+[
+{
+  "model": "rebanho.quantidade",
+  "pk": 1,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:42:14.726",
+    "author": null,
+    "entrada": 0,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 2,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:42:25.537",
+    "author": null,
+    "entrada": 0,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 3,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 3,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:42:31.936",
+    "author": null,
+    "entrada": 0,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 4,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:42:39.137",
+    "author": null,
+    "entrada": 0,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 5,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:45:15.715",
+    "author": null,
+    "entrada": 8,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 6,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:45:26.280",
+    "author": null,
+    "entrada": 12,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 7,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 3,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:45:39.830",
+    "author": null,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 8,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:45:54.385",
+    "author": null,
+    "entrada": 237,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 9,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:46:08.064",
+    "author": null,
+    "entrada": 33,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 10,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:46:20.118",
+    "author": null,
+    "entrada": 13,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 11,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 3,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:46:30.636",
+    "author": null,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 12,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:46:42.112",
+    "author": null,
+    "entrada": 70,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 13,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:46:51.882",
+    "author": null,
+    "entrada": 77,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 14,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:47:02.621",
+    "author": null,
+    "entrada": 72,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 15,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 3,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:47:13.040",
+    "author": null,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 16,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:47:26.351",
+    "author": null,
+    "entrada": 309,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 17,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 5,
+    "animal": 1,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:47:37.055",
+    "author": null,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 18,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 5,
+    "animal": 2,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:47:44.396",
+    "author": null,
+    "entrada": 0,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 19,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 5,
+    "animal": 3,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:47:54.174",
+    "author": null,
+    "entrada": 0,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 20,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 5,
+    "animal": 4,
+    "data": "2021-08-16",
+    "modificado": "2021-08-25T08:48:04.167",
+    "author": null,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 21,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2021-08-24",
+    "modificado": "2021-08-25T08:52:12.004",
+    "author": null,
+    "entrada": 40,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 22,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-08-24",
+    "modificado": "2021-08-25T08:52:46.566",
+    "author": null,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 23,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-08-24",
+    "modificado": "2021-08-25T08:52:58.180",
+    "author": null,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 24,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2021-08-24",
+    "modificado": "2021-08-25T08:53:25.320",
+    "author": null,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 25,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2021-08-24",
+    "modificado": "2021-08-25T08:53:36.459",
+    "author": null,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 26,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2021-08-24",
+    "modificado": "2021-08-25T08:54:04.095",
+    "author": null,
+    "entrada": 0,
+    "saida": 36,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 27,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-08-24",
+    "modificado": "2021-08-25T08:54:25.538",
+    "author": null,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 28,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2021-08-24",
+    "modificado": "2021-08-25T08:54:40.915",
+    "author": null,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 29,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 5,
+    "animal": 1,
+    "data": "2021-08-24",
+    "modificado": "2021-08-25T08:54:58.937",
+    "author": null,
+    "entrada": 0,
+    "saida": 4,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 30,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 5,
+    "animal": 4,
+    "data": "2021-08-24",
+    "modificado": "2021-08-25T08:55:33.901",
+    "author": null,
+    "entrada": 0,
+    "saida": 3,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 31,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-08-31",
+    "modificado": "2021-08-31T14:27:03.698",
+    "author": null,
+    "entrada": 0,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 33,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T14:17:13.985",
+    "author": null,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 34,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T14:18:05.224",
+    "author": null,
+    "entrada": 29,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 36,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T14:19:08.738",
+    "author": null,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 37,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T14:19:23.513",
+    "author": null,
+    "entrada": 22,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 38,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 3,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T14:19:34.411",
+    "author": null,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 39,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T14:20:02.510",
+    "author": null,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 41,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 3,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T14:26:11.717",
+    "author": null,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 42,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T14:26:40.633",
+    "author": null,
+    "entrada": 0,
+    "saida": 4,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 43,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T14:28:39.033",
+    "author": null,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 44,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-08-30",
+    "modificado": "2021-08-31T14:38:22.023",
+    "author": null,
+    "entrada": 0,
+    "saida": 33,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 45,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T14:39:17.028",
+    "author": null,
+    "entrada": 0,
+    "saida": 21,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 46,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T16:03:09.096",
+    "author": null,
+    "entrada": 0,
+    "saida": 32,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 47,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2021-09-06",
+    "modificado": "2021-09-06T16:05:13.827",
+    "author": null,
+    "entrada": 0,
+    "saida": 29,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 48,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2021-09-13",
+    "modificado": "2021-09-13T10:15:45.584",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 49,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-09-13",
+    "modificado": "2021-09-13T10:15:54.336",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 50,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-09-20",
+    "modificado": "2021-09-20T08:11:22.080",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 51,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-09-27",
+    "modificado": "2021-09-27T07:22:38.254",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 52,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-09-27",
+    "modificado": "2021-09-27T07:22:47.479",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 53,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-09-27",
+    "modificado": "2021-09-27T07:23:02.387",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 54,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2021-10-04",
+    "modificado": "2021-10-04T07:46:17.520",
+    "author": 1,
+    "entrada": 0,
+    "saida": 28,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 55,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-10-04",
+    "modificado": "2021-10-04T07:46:41.868",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 56,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-10-04",
+    "modificado": "2021-10-04T07:46:59.065",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 57,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-10-04",
+    "modificado": "2021-10-04T07:47:17.556",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 58,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2021-10-04",
+    "modificado": "2021-10-04T07:47:32.274",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 59,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2021-10-06",
+    "modificado": "2021-10-06T13:01:48.604",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 60,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-10-18",
+    "modificado": "2021-10-18T08:17:48.224",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 61,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-10-18",
+    "modificado": "2021-10-18T08:18:11.748",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 62,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2021-10-18",
+    "modificado": "2021-10-18T08:18:29.100",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 63,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-10-25",
+    "modificado": "2021-10-25T08:44:36.893",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 64,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-10-25",
+    "modificado": "2021-10-25T08:44:46.140",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 65,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-11-03",
+    "modificado": "2021-11-03T15:02:19.105",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 66,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-11-03",
+    "modificado": "2021-11-03T15:02:30.320",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 67,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-11-09",
+    "modificado": "2021-11-11T10:00:27.949",
+    "author": 1,
+    "entrada": 7,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 68,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2021-11-09",
+    "modificado": "2021-11-11T10:00:41.504",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 69,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-11-16",
+    "modificado": "2021-11-16T13:20:23.868",
+    "author": 1,
+    "entrada": 9,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 70,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-11-16",
+    "modificado": "2021-11-16T13:20:38.979",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 71,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2021-11-16",
+    "modificado": "2021-11-16T13:20:55.619",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 72,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2021-11-16",
+    "modificado": "2021-11-16T13:21:10.016",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 73,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2021-11-22",
+    "modificado": "2021-11-22T09:56:18.360",
+    "author": 1,
+    "entrada": 5,
+    "saida": 21,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 74,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2021-11-22",
+    "modificado": "2021-11-30T09:57:07.356",
+    "author": 1,
+    "entrada": 21,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 76,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2021-11-22",
+    "modificado": "2021-11-30T09:57:31.270",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 77,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-11-22",
+    "modificado": "2021-11-30T10:00:41.367",
+    "author": 1,
+    "entrada": 10,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 78,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-11-22",
+    "modificado": "2021-11-30T10:00:52.031",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 79,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-11-28",
+    "modificado": "2021-11-30T10:14:12.501",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 80,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-11-28",
+    "modificado": "2021-11-30T10:14:32.922",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 81,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2021-11-28",
+    "modificado": "2021-11-30T10:17:17.627",
+    "author": 1,
+    "entrada": 6,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 82,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-11-28",
+    "modificado": "2021-11-30T10:17:30.462",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 92,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:19:32.145",
+    "author": 1,
+    "entrada": 0,
+    "saida": 15,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 93,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:19:48.918",
+    "author": 1,
+    "entrada": 0,
+    "saida": 28,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 94,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:20:45.031",
+    "author": 1,
+    "entrada": 0,
+    "saida": 53,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 95,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:21:19.249",
+    "author": 1,
+    "entrada": 0,
+    "saida": 4,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 96,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:21:39.828",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 97,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:22:23.782",
+    "author": 1,
+    "entrada": 0,
+    "saida": 12,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 98,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:23:42.332",
+    "author": 1,
+    "entrada": 15,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 99,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:23:57.368",
+    "author": 1,
+    "entrada": 28,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 100,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:24:23.492",
+    "author": 1,
+    "entrada": 53,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 101,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:24:37.046",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 102,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:25:00.935",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 103,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:25:38.827",
+    "author": 1,
+    "entrada": 12,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 104,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:25:58.824",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 105,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:26:11.990",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 106,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:26:33.656",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 107,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:26:41.501",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 108,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:27:02.588",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 109,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-12-06",
+    "modificado": "2021-12-06T14:27:16.330",
+    "author": 1,
+    "entrada": 6,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 110,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-12-13",
+    "modificado": "2021-12-16T15:31:55.630",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 111,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2021-12-13",
+    "modificado": "2021-12-16T15:32:02.087",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 112,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2021-12-13",
+    "modificado": "2021-12-16T15:32:20.048",
+    "author": 1,
+    "entrada": 6,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 113,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-12-13",
+    "modificado": "2021-12-16T15:32:31.338",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 114,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-12-22",
+    "modificado": "2021-12-22T14:31:31.618",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 115,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2021-12-22",
+    "modificado": "2021-12-22T14:31:39.714",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 116,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-12-22",
+    "modificado": "2021-12-22T14:32:53.878",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 147,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 3,
+    "data": "2021-12-22",
+    "modificado": "2021-12-22T14:45:03.181",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 148,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2021-12-30",
+    "modificado": "2021-12-30T07:21:55.814",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 149,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2021-12-30",
+    "modificado": "2021-12-30T07:22:22.764",
+    "author": 1,
+    "entrada": 6,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 150,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2021-12-30",
+    "modificado": "2021-12-30T07:22:50.283",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 151,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-01-03",
+    "modificado": "2022-01-04T17:20:35.578",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 152,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-01-03",
+    "modificado": "2022-01-04T17:20:51.789",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 153,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-01-03",
+    "modificado": "2022-01-04T17:21:56.581",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 154,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-01-10",
+    "modificado": "2022-01-10T14:07:25.431",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 155,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-01-10",
+    "modificado": "2022-01-10T14:07:34.103",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 156,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-01-10",
+    "modificado": "2022-01-10T14:07:48.859",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 158,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-01-10",
+    "modificado": "2022-01-10T14:08:12.635",
+    "author": 1,
+    "entrada": 6,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 160,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-01-18",
+    "modificado": "2022-01-18T16:02:21.882",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 161,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-01-18",
+    "modificado": "2022-01-18T16:02:30.208",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 162,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-01-18",
+    "modificado": "2022-01-18T16:02:43.869",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 163,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2022-01-18",
+    "modificado": "2022-01-18T16:03:26.306",
+    "author": 1,
+    "entrada": 0,
+    "saida": 22,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 164,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2022-01-18",
+    "modificado": "2022-01-18T16:03:39.720",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 165,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-01-24",
+    "modificado": "2022-01-24T13:06:50.086",
+    "author": 2,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 166,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-01-24",
+    "modificado": "2022-01-24T13:07:03.179",
+    "author": 2,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 167,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-01-24",
+    "modificado": "2022-01-24T13:07:23.200",
+    "author": 2,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 168,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-01-24",
+    "modificado": "2022-01-24T13:07:58.302",
+    "author": 2,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 169,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-02-01",
+    "modificado": "2022-02-01T07:20:19.364",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 170,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-02-01",
+    "modificado": "2022-02-01T07:20:42.082",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 171,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-02-01",
+    "modificado": "2022-02-01T07:20:58.648",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 172,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-02-07",
+    "modificado": "2022-02-07T13:53:53.225",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 173,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-02-07",
+    "modificado": "2022-02-07T13:54:01.193",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 174,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-02-07",
+    "modificado": "2022-02-07T13:54:22.674",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 175,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-02-07",
+    "modificado": "2022-02-07T13:54:40.905",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 176,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2022-02-07",
+    "modificado": "2022-02-07T13:55:12.176",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 177,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-02-15",
+    "modificado": "2022-02-15T07:50:37.563",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 178,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-02-15",
+    "modificado": "2022-02-15T07:50:54.995",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 179,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-02-15",
+    "modificado": "2022-02-15T07:51:04.152",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 181,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-02-23",
+    "modificado": "2022-02-23T08:07:48.670",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 182,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-02-23",
+    "modificado": "2022-02-23T08:07:59.550",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 183,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-02-23",
+    "modificado": "2022-02-23T08:08:21.006",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 184,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-03-04",
+    "modificado": "2022-03-04T13:52:24.982",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 185,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-03-04",
+    "modificado": "2022-03-04T13:52:41.136",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 186,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-03-04",
+    "modificado": "2022-03-04T13:52:54.013",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 187,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-03-10",
+    "modificado": "2022-03-10T15:02:28.028",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 188,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-03-10",
+    "modificado": "2022-03-10T15:02:47.430",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 189,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-03-16",
+    "modificado": "2022-03-16T10:58:15.765",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 190,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-03-16",
+    "modificado": "2022-03-16T10:58:31.056",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 191,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2022-03-16",
+    "modificado": "2022-03-16T10:59:10.926",
+    "author": 1,
+    "entrada": 0,
+    "saida": 7,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 192,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-03-16",
+    "modificado": "2022-03-16T10:59:28.846",
+    "author": 1,
+    "entrada": 0,
+    "saida": 19,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 193,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-03-16",
+    "modificado": "2022-03-16T10:59:48.352",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 194,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-03-16",
+    "modificado": "2022-03-16T11:00:15.095",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 195,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-03-16",
+    "modificado": "2022-03-16T11:00:57.344",
+    "author": 1,
+    "entrada": 0,
+    "saida": 36,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 196,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2022-03-16",
+    "modificado": "2022-03-16T11:01:20.033",
+    "author": 1,
+    "entrada": 55,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 197,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2022-03-16",
+    "modificado": "2022-03-16T11:01:38.713",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 198,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2022-03-16",
+    "modificado": "2022-03-16T11:02:00.774",
+    "author": 1,
+    "entrada": 7,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 222,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-03-21",
+    "modificado": "2022-03-21T07:22:31.883",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 223,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-03-21",
+    "modificado": "2022-03-21T07:22:39.991",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 224,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-03-21",
+    "modificado": "2022-03-21T07:22:53.584",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 225,
+  "fields": {
+    "tipo_movimento": 2,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2022-03-21",
+    "modificado": "2022-03-21T07:23:27.276",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 226,
+  "fields": {
+    "tipo_movimento": 2,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-03-21",
+    "modificado": "2022-03-21T07:23:47.355",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 227,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2022-03-21",
+    "modificado": "2022-03-21T07:24:23.641",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 228,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2022-03-21",
+    "modificado": "2022-03-21T07:24:43.440",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 229,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-03-29",
+    "modificado": "2022-03-29T14:39:31.903",
+    "author": 1,
+    "entrada": 2,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 231,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2022-03-29",
+    "modificado": "2022-03-29T14:31:41.411",
+    "author": 1,
+    "entrada": 0,
+    "saida": 20,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 232,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 4,
+    "animal": 3,
+    "data": "2022-03-29",
+    "modificado": "2022-03-29T11:49:01.200",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 233,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-04-05",
+    "modificado": "2022-04-05T07:55:06.290",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 234,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-04-05",
+    "modificado": "2022-04-05T07:55:22.399",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 235,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-04-05",
+    "modificado": "2022-04-05T07:55:44.950",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 236,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-04-05",
+    "modificado": "2022-04-05T07:55:53.615",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 237,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-04-05",
+    "modificado": "2022-04-05T07:56:10.974",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 238,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-04-05",
+    "modificado": "2022-04-12T09:58:34.904",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 239,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-04-05",
+    "modificado": "2022-04-12T09:58:47.132",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 240,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-04-05",
+    "modificado": "2022-04-12T09:59:13.382",
+    "author": 1,
+    "entrada": 7,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 241,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-04-05",
+    "modificado": "2022-04-12T09:59:27.634",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 242,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-04-12",
+    "modificado": "2022-04-13T13:10:17.289",
+    "author": 1,
+    "entrada": 0,
+    "saida": 17,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 243,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2022-04-12",
+    "modificado": "2022-04-13T13:10:33.408",
+    "author": 1,
+    "entrada": 17,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 244,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-04-12",
+    "modificado": "2022-04-13T13:11:09.097",
+    "author": 1,
+    "entrada": 13,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 245,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-04-12",
+    "modificado": "2022-04-13T13:11:24.288",
+    "author": 1,
+    "entrada": 15,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 246,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2022-04-12",
+    "modificado": "2022-04-13T13:11:55.187",
+    "author": 1,
+    "entrada": 0,
+    "saida": 10,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 247,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-04-19",
+    "modificado": "2022-04-19T13:06:10.772",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 248,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-04-19",
+    "modificado": "2022-04-19T13:06:22.956",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 249,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-04-19",
+    "modificado": "2022-04-19T13:06:38.700",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 250,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-04-19",
+    "modificado": "2022-04-19T13:06:52.019",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 251,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-04-26",
+    "modificado": "2022-04-26T16:07:26.419",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 252,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-04-26",
+    "modificado": "2022-04-26T16:07:36.517",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 253,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-04-26",
+    "modificado": "2022-04-26T16:08:04.911",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 254,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-04-26",
+    "modificado": "2022-04-26T16:08:13.519",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 255,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-04-26",
+    "modificado": "2022-04-26T16:08:37.213",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 256,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-05-03",
+    "modificado": "2022-05-03T07:54:53.464",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 257,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-05-03",
+    "modificado": "2022-05-03T07:55:03.847",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 258,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-05-03",
+    "modificado": "2022-05-03T07:55:15.921",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 259,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-05-10",
+    "modificado": "2022-05-10T08:29:20.561",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 260,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-05-10",
+    "modificado": "2022-05-10T08:29:38.065",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 261,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2022-05-10",
+    "modificado": "2022-05-10T08:30:04.579",
+    "author": 1,
+    "entrada": 0,
+    "saida": 20,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 262,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-05-16",
+    "modificado": "2022-05-17T10:04:12.721",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 263,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-05-16",
+    "modificado": "2022-05-17T10:04:29.031",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 264,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-05-16",
+    "modificado": "2022-05-17T10:04:43.900",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 265,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-05-23",
+    "modificado": "2022-05-23T08:44:49.685",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 266,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 3,
+    "data": "2022-05-23",
+    "modificado": "2022-05-23T08:46:27.784",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 267,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2022-05-23",
+    "modificado": "2022-05-23T08:45:30.159",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 268,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 3,
+    "data": "2022-05-23",
+    "modificado": "2022-05-23T08:46:54.819",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 269,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2022-05-23",
+    "modificado": "2022-05-23T08:47:04.140",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 270,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-05-23",
+    "modificado": "2022-05-23T08:48:24.515",
+    "author": 1,
+    "entrada": 3,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 271,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-05-23",
+    "modificado": "2022-05-23T08:48:39.969",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 272,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-05-31",
+    "modificado": "2022-05-31T07:58:28.922",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 273,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-05-31",
+    "modificado": "2022-05-31T07:58:39.349",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 274,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-05-31",
+    "modificado": "2022-05-31T07:58:52.776",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 275,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-05-31",
+    "modificado": "2022-05-31T07:59:05.042",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 276,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-05-31",
+    "modificado": "2022-05-31T07:59:17.899",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 277,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-05-31",
+    "modificado": "2022-05-31T07:59:26.861",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 278,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-06-07",
+    "modificado": "2022-06-07T07:54:54.040",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 279,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-06-07",
+    "modificado": "2022-06-07T07:55:02.773",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 281,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-06-07",
+    "modificado": "2022-06-07T07:57:01.175",
+    "author": 1,
+    "entrada": 0,
+    "saida": 7,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 282,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-06-07",
+    "modificado": "2022-06-07T07:57:32.215",
+    "author": 1,
+    "entrada": 0,
+    "saida": 13,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 283,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2022-06-07",
+    "modificado": "2022-06-07T08:32:44.938",
+    "author": 1,
+    "entrada": 7,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 284,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2022-06-07",
+    "modificado": "2022-06-07T07:58:24.709",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 285,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-06-07",
+    "modificado": "2022-06-07T07:59:08.739",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 286,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-06-07",
+    "modificado": "2022-06-07T07:59:25.316",
+    "author": 1,
+    "entrada": 12,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 287,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-06-07",
+    "modificado": "2022-06-07T08:00:42.835",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 288,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2022-06-07",
+    "modificado": "2022-06-07T08:00:53.146",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 289,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-06-13",
+    "modificado": "2022-06-15T07:57:03.922",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 290,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-06-13",
+    "modificado": "2022-06-15T07:57:14.289",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 291,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-06-13",
+    "modificado": "2022-06-15T07:57:38.296",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 292,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-06-13",
+    "modificado": "2022-06-15T07:57:48.907",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 293,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-06-21",
+    "modificado": "2022-06-21T07:49:52.433",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 294,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-06-21",
+    "modificado": "2022-06-21T07:50:02.201",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 295,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-06-21",
+    "modificado": "2022-06-21T07:50:17.033",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 296,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-06-28",
+    "modificado": "2022-06-28T08:22:32.266",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 297,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-06-28",
+    "modificado": "2022-06-28T08:23:02.357",
+    "author": 1,
+    "entrada": 0,
+    "saida": 28,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 298,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-06-28",
+    "modificado": "2022-06-28T08:23:54.992",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 299,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-06-28",
+    "modificado": "2022-06-28T08:24:50.731",
+    "author": 1,
+    "entrada": 1,
+    "saida": 21,
+    "obs": "VENDA 23 bezerros"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 300,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-06-28",
+    "modificado": "2022-06-28T08:25:46.237",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 301,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-06-28",
+    "modificado": "2022-06-28T08:26:04.147",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 302,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2022-06-28",
+    "modificado": "2022-06-28T08:26:30.281",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 303,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2022-06-28",
+    "modificado": "2022-06-28T08:26:46.356",
+    "author": 1,
+    "entrada": 0,
+    "saida": 22,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 315,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2022-07-07",
+    "modificado": "2022-07-07T09:27:42.987",
+    "author": 1,
+    "entrada": 65,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 316,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2022-07-07",
+    "modificado": "2022-07-07T09:28:03.367",
+    "author": 1,
+    "entrada": 0,
+    "saida": 16,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 317,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-07-07",
+    "modificado": "2022-07-07T09:28:48.291",
+    "author": 1,
+    "entrada": 6,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 318,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-07-07",
+    "modificado": "2022-07-07T09:29:20.663",
+    "author": 1,
+    "entrada": 0,
+    "saida": 31,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 319,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-07-07",
+    "modificado": "2022-07-07T09:30:02.538",
+    "author": 1,
+    "entrada": 0,
+    "saida": 20,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 320,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2022-07-07",
+    "modificado": "2022-07-07T09:30:18.000",
+    "author": 1,
+    "entrada": 16,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 321,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-07-07",
+    "modificado": "2022-07-07T09:30:37.636",
+    "author": 1,
+    "entrada": 2,
+    "saida": 14,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 322,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-07-07",
+    "modificado": "2022-07-07T09:30:50.250",
+    "author": 1,
+    "entrada": 2,
+    "saida": 6,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 323,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2022-07-07",
+    "modificado": "2022-07-07T10:08:18.017",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 324,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-07-13",
+    "modificado": "2022-07-14T08:11:39.672",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 325,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-07-13",
+    "modificado": "2022-07-14T08:12:18.565",
+    "author": 1,
+    "entrada": 6,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 326,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-07-13",
+    "modificado": "2022-07-14T08:12:58.909",
+    "author": 1,
+    "entrada": 6,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 327,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-07-13",
+    "modificado": "2022-07-14T08:13:37.303",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 328,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-07-18",
+    "modificado": "2022-07-20T07:29:38.615",
+    "author": 1,
+    "entrada": 2,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 329,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-07-18",
+    "modificado": "2022-07-20T07:30:30.307",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 330,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-07-18",
+    "modificado": "2022-07-20T07:31:25.499",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 331,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-07-18",
+    "modificado": "2022-07-20T07:31:39.179",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 332,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-07-25",
+    "modificado": "2022-07-25T16:08:01.292",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 333,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-07-25",
+    "modificado": "2022-07-25T16:08:10.737",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 334,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-07-25",
+    "modificado": "2022-07-25T16:08:29.435",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 335,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-07-25",
+    "modificado": "2022-07-25T16:09:01.328",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 336,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-08-02",
+    "modificado": "2022-08-02T09:15:14.406",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 337,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-08-02",
+    "modificado": "2022-08-02T09:15:32.874",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 338,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-08-02",
+    "modificado": "2022-08-02T09:15:40.758",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 339,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2022-08-02",
+    "modificado": "2022-08-02T09:16:00.068",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 340,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2022-08-02",
+    "modificado": "2022-08-02T09:16:30.722",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 341,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2022-08-09",
+    "modificado": "2022-08-09T09:08:51.149",
+    "author": 1,
+    "entrada": 0,
+    "saida": 11,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 342,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 3,
+    "data": "2022-08-09",
+    "modificado": "2022-08-09T09:09:04.107",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 343,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2022-08-09",
+    "modificado": "2022-08-09T09:09:17.611",
+    "author": 1,
+    "entrada": 11,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 344,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 3,
+    "data": "2022-08-09",
+    "modificado": "2022-08-09T09:09:49.040",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 345,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 3,
+    "data": "2022-08-09",
+    "modificado": "2022-08-09T09:10:04.644",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 346,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-08-09",
+    "modificado": "2022-08-09T09:10:21.533",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 347,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-08-09",
+    "modificado": "2022-08-09T09:10:29.343",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 348,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2022-08-17",
+    "modificado": "2022-08-17T15:44:23.139",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 349,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-08-17",
+    "modificado": "2022-08-17T15:44:48.012",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 350,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-08-17",
+    "modificado": "2022-08-17T15:45:23.251",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 351,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-08-17",
+    "modificado": "2022-08-17T15:45:47.943",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 352,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 3,
+    "data": "2022-08-17",
+    "modificado": "2022-08-17T15:46:10.593",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 353,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2022-08-22",
+    "modificado": "2022-08-29T10:08:01.543",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 354,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-08-22",
+    "modificado": "2022-08-29T10:08:15.976",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 355,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-08-22",
+    "modificado": "2022-08-30T09:01:21.953",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": "Poss\u00edvel causa picada de cobra."
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 356,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-08-30",
+    "modificado": "2022-08-30T09:01:21.953",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 357,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2022-08-30",
+    "modificado": "2022-08-30T09:01:21.953",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 358,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-08-30",
+    "modificado": "2022-08-30T09:01:21.953",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 359,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-09-06",
+    "modificado": "2022-09-06T09:01:21.953",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 360,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-09-20",
+    "modificado": "2022-09-20T09:01:21.953",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 361,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-09-20",
+    "modificado": "2022-09-20T09:01:21.953",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 362,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-09-28",
+    "modificado": "2022-09-28T16:12:24.633",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 363,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2022-10-13",
+    "modificado": "2022-10-13T10:32:46.333",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 364,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-10-13",
+    "modificado": "2022-10-13T10:32:58.422",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 365,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-10-13",
+    "modificado": "2022-10-13T10:33:15.437",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 366,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-10-13",
+    "modificado": "2022-10-13T10:33:29.488",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 367,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-10-18",
+    "modificado": "2022-10-18T09:18:23.705",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 368,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-10-18",
+    "modificado": "2022-10-18T09:18:23.705",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 369,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-10-18",
+    "modificado": "2022-10-18T09:18:23.705",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 370,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-10-18",
+    "modificado": "2022-10-18T09:18:23.705",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 371,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-10-26",
+    "modificado": "2022-10-26T16:07:30.705",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 372,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-10-26",
+    "modificado": "2022-10-26T16:07:47.347",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 373,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-10-26",
+    "modificado": "2022-10-26T16:07:57.906",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 374,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-11-03",
+    "modificado": "2022-11-03T15:15:31.784",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 375,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-11-03",
+    "modificado": "2022-11-03T15:16:03.418",
+    "author": 1,
+    "entrada": 2,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 376,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-11-03",
+    "modificado": "2022-11-03T15:16:20.719",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 378,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2022-11-03",
+    "modificado": "2022-11-03T15:17:07.860",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 379,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2022-11-11",
+    "modificado": "2022-11-11T07:09:45.848",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 380,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2022-11-11",
+    "modificado": "2022-11-11T07:10:08.291",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 381,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2022-11-11",
+    "modificado": "2022-11-11T07:10:24.270",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 382,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-11-16",
+    "modificado": "2022-11-16T09:42:44.477",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 383,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-11-16",
+    "modificado": "2022-11-16T09:42:44.477",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 384,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2022-11-16",
+    "modificado": "2022-11-16T09:42:44.477",
+    "author": 1,
+    "entrada": 0,
+    "saida": 3,
+    "obs": "02 MORREU ATOLADA E 01 SACRIFICADA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 385,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-11-21",
+    "modificado": "2022-11-21T09:54:00.481",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 386,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-11-21",
+    "modificado": "2022-11-21T09:54:00.481",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 387,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-11-21",
+    "modificado": "2022-11-21T09:54:00.481",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 388,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2022-11-21",
+    "modificado": "2022-11-21T09:54:00.481",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 389,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2022-11-21",
+    "modificado": "2022-11-21T09:54:00.481",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 390,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2022-11-30",
+    "modificado": "2022-11-30T10:01:23.505",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 391,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2022-11-30",
+    "modificado": "2022-11-30T10:01:39.332",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 392,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-12-07",
+    "modificado": "2022-12-07T14:08:16.356",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 393,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2022-12-07",
+    "modificado": "2022-12-07T14:09:25.725",
+    "author": 1,
+    "entrada": 0,
+    "saida": 46,
+    "obs": "45 transferida para fazenda s\u00e3o bento, 1 morte"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 394,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 5,
+    "animal": 4,
+    "data": "2022-12-07",
+    "modificado": "2022-12-07T14:09:39.820",
+    "author": 1,
+    "entrada": 45,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 395,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-12-14",
+    "modificado": "2022-12-14T09:26:14.943",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 396,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-12-14",
+    "modificado": "2022-12-14T09:26:24.862",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 397,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2022-12-23",
+    "modificado": "2022-12-23T09:59:03.168",
+    "author": 1,
+    "entrada": 0,
+    "saida": 22,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 398,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2022-12-23",
+    "modificado": "2022-12-23T10:00:23.144",
+    "author": 1,
+    "entrada": 17,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 399,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2022-12-23",
+    "modificado": "2022-12-23T10:00:38.976",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 400,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2022-12-23",
+    "modificado": "2022-12-23T10:01:19.939",
+    "author": 1,
+    "entrada": 5,
+    "saida": 3,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 401,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2022-12-23",
+    "modificado": "2022-12-23T10:01:35.011",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 402,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-12-23",
+    "modificado": "2022-12-23T10:04:16.551",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 403,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-12-23",
+    "modificado": "2022-12-23T10:04:24.315",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 404,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2022-12-27",
+    "modificado": "2022-12-27T07:44:20.824",
+    "author": 1,
+    "entrada": 10,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 405,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2022-12-27",
+    "modificado": "2022-12-27T07:44:21.824",
+    "author": 1,
+    "entrada": 6,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 406,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 5,
+    "animal": 1,
+    "data": "2023-01-06",
+    "modificado": "2023-01-06T07:56:15.117",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 407,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 5,
+    "animal": 2,
+    "data": "2023-01-06",
+    "modificado": "2023-01-06T07:56:23.927",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 408,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-01-06",
+    "modificado": "2023-01-06T07:56:47.700",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 409,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-01-06",
+    "modificado": "2023-01-06T07:57:05.255",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 410,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2023-01-06",
+    "modificado": "2023-01-06T07:57:21.380",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 411,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2023-01-06",
+    "modificado": "2023-01-06T07:57:52.552",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 412,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-01-06",
+    "modificado": "2023-01-06T07:58:14.091",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 413,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-01-10",
+    "modificado": "2023-01-10T14:17:51.404",
+    "author": 1,
+    "entrada": 1,
+    "saida": 14,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 414,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-01-10",
+    "modificado": "2023-01-10T14:17:51.404",
+    "author": 1,
+    "entrada": 4,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 415,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-01-10",
+    "modificado": "2023-01-10T14:17:51.404",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 416,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-01-10",
+    "modificado": "2023-01-10T14:17:51.404",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": "1 transfe"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 417,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-01-10",
+    "modificado": "2023-01-10T14:17:51.404",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 418,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2023-01-10",
+    "modificado": "2023-01-10T14:17:51.404",
+    "author": 1,
+    "entrada": 14,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 419,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2023-01-10",
+    "modificado": "2023-01-10T14:17:51.404",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 420,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-01-10",
+    "modificado": "2023-01-10T14:17:51.404",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 421,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-01-18",
+    "modificado": "2023-01-18T14:08:20.665",
+    "author": 1,
+    "entrada": 1,
+    "saida": 25,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 422,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-01-18",
+    "modificado": "2023-01-18T14:08:45.156",
+    "author": 1,
+    "entrada": 0,
+    "saida": 30,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 423,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2023-01-18",
+    "modificado": "2023-01-18T14:09:18.068",
+    "author": 1,
+    "entrada": 20,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 424,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-01-18",
+    "modificado": "2023-01-18T14:10:01.948",
+    "author": 1,
+    "entrada": 32,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 425,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-01-18",
+    "modificado": "2023-01-18T14:10:30.135",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 426,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-01-25",
+    "modificado": "2023-01-25T07:52:16.467",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 427,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-01-25",
+    "modificado": "2023-01-25T07:52:38.137",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 428,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 5,
+    "animal": 1,
+    "data": "2023-01-25",
+    "modificado": "2023-01-25T07:53:11.397",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 429,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-01-31",
+    "modificado": "2023-01-31T13:38:38.713",
+    "author": 1,
+    "entrada": 0,
+    "saida": 56,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 430,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-01-31",
+    "modificado": "2023-01-31T13:39:10.754",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 431,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-01-31",
+    "modificado": "2023-01-31T13:39:30.479",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 432,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-01-31",
+    "modificado": "2023-01-31T13:40:09.549",
+    "author": 1,
+    "entrada": 0,
+    "saida": 16,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 433,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-01-31",
+    "modificado": "2023-01-31T13:40:30.488",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 434,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-01-31",
+    "modificado": "2023-01-31T13:40:39.453",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 435,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2023-01-31",
+    "modificado": "2023-01-31T13:41:35.234",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": "Morte Poss\u00edvel Causa Picada por Cobra"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 436,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2023-02-08",
+    "modificado": "2023-02-08T14:31:13.738",
+    "author": 1,
+    "entrada": 0,
+    "saida": 6,
+    "obs": "As vacas que foram vendidas para o Edmarzinho, M\u00e1rcio"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 437,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-02-08",
+    "modificado": "2023-02-08T14:31:30.599",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 438,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-02-08",
+    "modificado": "2023-02-08T14:31:44.892",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 439,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 5,
+    "animal": 1,
+    "data": "2023-02-08",
+    "modificado": "2023-02-08T14:31:59.529",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 440,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 5,
+    "animal": 2,
+    "data": "2023-02-08",
+    "modificado": "2023-02-08T14:32:08.093",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 441,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-02-16",
+    "modificado": "2023-02-16T13:29:02.247",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 442,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-02-16",
+    "modificado": "2023-02-16T13:29:08.545",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 443,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-02-16",
+    "modificado": "2023-02-16T13:29:29.638",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 444,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-02-16",
+    "modificado": "2023-02-16T13:35:24.345",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 445,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-02-16",
+    "modificado": "2023-02-16T13:35:45.195",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 446,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-02-16",
+    "modificado": "2023-02-16T13:35:53.452",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 447,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-02-16",
+    "modificado": "2023-02-16T13:36:32.430",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 448,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-02-16",
+    "modificado": "2023-02-16T13:36:53.123",
+    "author": 1,
+    "entrada": 0,
+    "saida": 60,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 449,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-02-22",
+    "modificado": "2023-02-22T07:31:03.837",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 450,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-02-22",
+    "modificado": "2023-02-22T07:31:16.913",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 451,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-02-22",
+    "modificado": "2023-02-22T07:31:35.695",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 452,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 5,
+    "animal": 1,
+    "data": "2023-02-22",
+    "modificado": "2023-02-22T07:31:52.848",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 453,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 5,
+    "animal": 2,
+    "data": "2023-02-22",
+    "modificado": "2023-02-22T07:32:01.347",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 454,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-02-22",
+    "modificado": "2023-02-22T07:32:26.178",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 455,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-02-22",
+    "modificado": "2023-02-22T07:32:35.484",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 456,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:44:32.933",
+    "author": 1,
+    "entrada": 0,
+    "saida": 41,
+    "obs": "TRANFERIDAS PARA FAZ. ALVORADA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 457,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:46:01.947",
+    "author": 1,
+    "entrada": 35,
+    "saida": 0,
+    "obs": "ENTRADA DE VACAS QUE ERAM BEZERRAS NA FAZ. ALVORADA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 458,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:47:13.696",
+    "author": 1,
+    "entrada": 0,
+    "saida": 35,
+    "obs": "BEZERRAS QUE SE TORNOU VACA E FORAM PARA FAZ.ASA BRANCA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 459,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:48:03.432",
+    "author": 1,
+    "entrada": 41,
+    "saida": 0,
+    "obs": "BEZERRAS QUE VEIO DA FAZ. ASA BRANCA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 460,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:49:41.746",
+    "author": 1,
+    "entrada": 45,
+    "saida": 0,
+    "obs": "VINDAS DA FAZENDA SAO BENTO"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 461,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:50:12.102",
+    "author": 1,
+    "entrada": 6,
+    "saida": 0,
+    "obs": "VINDAS DA FAZ. SAO BENTO"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 462,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:50:42.995",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": "VINDOS DA FAZ. SAO BENTO"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 463,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:51:03.950",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 464,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:51:13.066",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 465,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 5,
+    "animal": 4,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:51:34.982",
+    "author": 1,
+    "entrada": 0,
+    "saida": 45,
+    "obs": "PARA FAZ. MR"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 466,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 5,
+    "animal": 1,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:52:01.205",
+    "author": 1,
+    "entrada": 0,
+    "saida": 6,
+    "obs": "PARA MR"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 467,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 5,
+    "animal": 2,
+    "data": "2023-03-02",
+    "modificado": "2023-03-02T16:52:16.900",
+    "author": 1,
+    "entrada": 0,
+    "saida": 5,
+    "obs": "PARA MR"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 468,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-03-07",
+    "modificado": "2023-03-07T08:16:55.411",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 469,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-03-07",
+    "modificado": "2023-03-07T08:17:08.029",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 470,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-03-07",
+    "modificado": "2023-03-07T08:17:25.432",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 471,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-03-07",
+    "modificado": "2023-03-07T08:17:32.842",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 472,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-03-07",
+    "modificado": "2023-03-07T08:17:46.242",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 473,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-03-16",
+    "modificado": "2023-03-16T10:17:57.895",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 474,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-03-16",
+    "modificado": "2023-03-16T10:18:11.329",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 475,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-03-23",
+    "modificado": "2023-03-23T16:03:38.061",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 476,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-03-23",
+    "modificado": "2023-03-23T16:04:08.654",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": "POSSIVEL CAUSA PICADA DE COBRA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 477,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-03-23",
+    "modificado": "2023-03-23T16:04:20.371",
+    "author": 1,
+    "entrada": 0,
+    "saida": 3,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 478,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-03-30",
+    "modificado": "2023-03-30T08:14:51.277",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 479,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-03-30",
+    "modificado": "2023-03-30T08:14:59.520",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 480,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-03-30",
+    "modificado": "2023-03-30T08:15:16.668",
+    "author": 1,
+    "entrada": 0,
+    "saida": 25,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 481,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 3,
+    "data": "2023-03-30",
+    "modificado": "2023-03-30T08:15:34.346",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 482,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-04-06",
+    "modificado": "2023-04-06T09:28:09.694",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 483,
+  "fields": {
+    "tipo_movimento": 2,
+    "fazenda": 4,
+    "animal": 3,
+    "data": "2023-04-06",
+    "modificado": "2023-04-06T09:28:38.508",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 484,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2023-04-06",
+    "modificado": "2023-04-06T09:28:57.245",
+    "author": 1,
+    "entrada": 0,
+    "saida": 6,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 485,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-04-06",
+    "modificado": "2023-04-06T09:29:17.255",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 486,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-04-06",
+    "modificado": "2023-04-06T09:29:41.816",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 487,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-04-06",
+    "modificado": "2023-04-06T09:30:00.896",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 488,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-04-06",
+    "modificado": "2023-04-06T09:30:21.226",
+    "author": 1,
+    "entrada": 6,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 489,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-04-06",
+    "modificado": "2023-04-06T09:30:36.113",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 490,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-04-06",
+    "modificado": "2023-04-06T09:30:52.703",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 491,
+  "fields": {
+    "tipo_movimento": 2,
+    "fazenda": 3,
+    "animal": 3,
+    "data": "2023-04-06",
+    "modificado": "2023-04-06T09:31:25.719",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 492,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-04-12",
+    "modificado": "2023-04-12T08:53:23.782",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 493,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-04-19",
+    "modificado": "2023-04-19T08:58:57.230",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 494,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-04-19",
+    "modificado": "2023-04-19T08:59:05.875",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 495,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-04-19",
+    "modificado": "2023-04-19T08:59:05.875",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": "VENDA DE UM ANGUS"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 496,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-04-19",
+    "modificado": "2023-04-19T08:59:05.875",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 497,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-04-19",
+    "modificado": "2023-04-19T08:59:05.875",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 498,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-04-19",
+    "modificado": "2023-04-19T08:59:05.875",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 499,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-04-19",
+    "modificado": "2023-04-19T08:59:05.875",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 500,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-04-26",
+    "modificado": "2023-04-26T09:07:19.784",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 501,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-04-26",
+    "modificado": "2023-04-26T09:07:30.330",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 502,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-04-26",
+    "modificado": "2023-04-26T09:07:54.432",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 503,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-05-03",
+    "modificado": "2023-05-03T14:52:27.334",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 504,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-05-03",
+    "modificado": "2023-05-03T14:52:44.158",
+    "author": 1,
+    "entrada": 0,
+    "saida": 30,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 505,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-05-03",
+    "modificado": "2023-05-03T14:53:11.718",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 506,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-05-03",
+    "modificado": "2023-05-03T14:53:29.195",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 507,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-05-03",
+    "modificado": "2023-05-03T14:53:43.357",
+    "author": 1,
+    "entrada": 0,
+    "saida": 10,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 508,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2023-05-03",
+    "modificado": "2023-05-03T14:53:56.725",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 509,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-05-10",
+    "modificado": "2023-05-10T14:58:58.580",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 510,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-05-10",
+    "modificado": "2023-05-10T14:59:09.442",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 511,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-05-10",
+    "modificado": "2023-05-10T14:59:30.911",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 512,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-05-10",
+    "modificado": "2023-05-10T14:59:47.197",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 513,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-05-16",
+    "modificado": "2023-05-16T10:14:29.865",
+    "author": 1,
+    "entrada": 7,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 514,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2023-05-16",
+    "modificado": "2023-05-16T10:14:43.467",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 515,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-05-16",
+    "modificado": "2023-05-16T10:14:56.639",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 516,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-05-24",
+    "modificado": "2023-05-24T10:19:55.387",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 517,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-05-24",
+    "modificado": "2023-05-24T10:20:38.076",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": "DOA\u00c7\u00c3O PARA IGREJA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 518,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-05-24",
+    "modificado": "2023-05-24T10:20:52.390",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 519,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2023-05-24",
+    "modificado": "2023-05-24T10:21:09.943",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 520,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-05-24",
+    "modificado": "2023-05-24T10:21:26.325",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 521,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-05-31",
+    "modificado": "2023-05-31T07:35:40.317",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 522,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-05-31",
+    "modificado": "2023-05-31T07:36:00.762",
+    "author": 1,
+    "entrada": 7,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 523,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-05-31",
+    "modificado": "2023-05-31T07:36:08.587",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 524,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-05-31",
+    "modificado": "2023-05-31T07:36:26.741",
+    "author": 1,
+    "entrada": 10,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 525,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-05-31",
+    "modificado": "2023-05-31T07:36:40.849",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 526,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-06-06",
+    "modificado": "2023-06-06T07:43:34.515",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 527,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-06-06",
+    "modificado": "2023-06-06T07:43:41.846",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 528,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-06-06",
+    "modificado": "2023-06-06T07:44:09.751",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": "FRAQUESA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 529,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-06-06",
+    "modificado": "2023-06-06T07:44:25.731",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 530,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-06-06",
+    "modificado": "2023-06-06T07:44:33.061",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 531,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-06-13",
+    "modificado": "2023-06-13T07:50:58.254",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 532,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-06-13",
+    "modificado": "2023-06-13T07:51:11.023",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 533,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2023-06-13",
+    "modificado": "2023-06-13T07:51:36.270",
+    "author": 1,
+    "entrada": 0,
+    "saida": 20,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 534,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-06-13",
+    "modificado": "2023-06-13T07:51:47.247",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 535,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-06-13",
+    "modificado": "2023-06-13T07:52:16.639",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 536,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-06-13",
+    "modificado": "2023-06-13T07:52:23.440",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 537,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-06-13",
+    "modificado": "2023-06-13T07:52:44.083",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 538,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-06-21",
+    "modificado": "2023-06-21T08:28:43.277",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 539,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-06-21",
+    "modificado": "2023-06-21T08:28:50.994",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 540,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2023-06-21",
+    "modificado": "2023-06-21T08:29:11.162",
+    "author": 1,
+    "entrada": 0,
+    "saida": 20,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 541,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-06-21",
+    "modificado": "2023-06-21T08:29:49.765",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": "PARA A CHCARA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 542,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-06-21",
+    "modificado": "2023-06-21T08:30:09.204",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 543,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-06-29",
+    "modificado": "2023-06-29T15:04:20.771",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 544,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-06-29",
+    "modificado": "2023-06-29T15:04:34.148",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 545,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-06-29",
+    "modificado": "2023-06-29T15:05:05.029",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 546,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-06-29",
+    "modificado": "2023-06-29T15:05:22.530",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 547,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-07-06",
+    "modificado": "2023-07-06T15:25:05.837",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 548,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2023-07-06",
+    "modificado": "2023-07-06T15:25:26.738",
+    "author": 1,
+    "entrada": 0,
+    "saida": 18,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 549,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-07-06",
+    "modificado": "2023-07-06T15:25:57.026",
+    "author": 1,
+    "entrada": 53,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 550,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-07-06",
+    "modificado": "2023-07-06T15:26:25.882",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 551,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-07-06",
+    "modificado": "2023-07-06T15:26:47.078",
+    "author": 1,
+    "entrada": 18,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 552,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2023-07-06",
+    "modificado": "2023-07-06T15:27:18.531",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 553,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2023-07-06",
+    "modificado": "2023-07-06T15:28:15.145",
+    "author": 1,
+    "entrada": 0,
+    "saida": 53,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 554,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-07-14",
+    "modificado": "2023-07-14T15:41:19.353",
+    "author": 1,
+    "entrada": 0,
+    "saida": 15,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 555,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-07-14",
+    "modificado": "2023-07-14T15:41:57.542",
+    "author": 1,
+    "entrada": 0,
+    "saida": 40,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 556,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-07-14",
+    "modificado": "2023-07-14T15:42:54.145",
+    "author": 1,
+    "entrada": 50,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 557,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-07-14",
+    "modificado": "2023-07-14T15:43:09.753",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 558,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2023-07-14",
+    "modificado": "2023-07-14T15:43:53.561",
+    "author": 1,
+    "entrada": 0,
+    "saida": 50,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 559,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2023-07-14",
+    "modificado": "2023-07-14T15:44:08.126",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 560,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-07-14",
+    "modificado": "2023-07-14T15:44:46.415",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 561,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-07-14",
+    "modificado": "2023-07-14T15:45:11.787",
+    "author": 1,
+    "entrada": 0,
+    "saida": 17,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 562,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-07-22",
+    "modificado": "2023-07-22T14:07:51.123",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 563,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-07-22",
+    "modificado": "2023-07-22T14:08:08.884",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 564,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-07-22",
+    "modificado": "2023-07-22T14:08:15.815",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 565,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-07-28",
+    "modificado": "2023-07-28T14:12:45.326",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 566,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-07-28",
+    "modificado": "2023-07-28T14:13:07.491",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 567,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-08-01",
+    "modificado": "2023-08-01T14:16:50.698",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 568,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-08-01",
+    "modificado": "2023-08-01T14:16:57.733",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 569,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-08-01",
+    "modificado": "2023-08-01T14:17:11.862",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 570,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-08-09",
+    "modificado": "2023-08-09T09:55:20.346",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 571,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-08-09",
+    "modificado": "2023-08-09T09:55:33.198",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 572,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-08-16",
+    "modificado": "2023-08-16T16:27:12.900",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 573,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-08-16",
+    "modificado": "2023-08-16T16:27:46.804",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 574,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-09-06",
+    "modificado": "2023-09-06T07:50:13.417",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 575,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-09-06",
+    "modificado": "2023-09-06T07:50:43.436",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": "QUEBROU A PERNA E FOI SACRIFICADA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 576,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-09-06",
+    "modificado": "2023-09-06T07:51:05.755",
+    "author": 1,
+    "entrada": 0,
+    "saida": 43,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 577,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-09-14",
+    "modificado": "2023-09-14T07:56:23.976",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 578,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-09-14",
+    "modificado": "2023-09-14T07:56:45.999",
+    "author": 1,
+    "entrada": 0,
+    "saida": 10,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 579,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-09-14",
+    "modificado": "2023-09-14T07:57:08.461",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 580,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2023-09-14",
+    "modificado": "2023-09-14T07:57:23.963",
+    "author": 1,
+    "entrada": 10,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 581,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-09-14",
+    "modificado": "2023-09-14T07:57:42.610",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 582,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-09-20",
+    "modificado": "2023-09-20T09:32:38.305",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 583,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-09-20",
+    "modificado": "2023-09-20T09:32:46.345",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 584,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-09-26",
+    "modificado": "2023-09-26T09:37:50.005",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 585,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-09-26",
+    "modificado": "2023-09-26T09:38:06.868",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 586,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-09-26",
+    "modificado": "2023-09-26T09:38:23.927",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 587,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-10-03",
+    "modificado": "2023-10-03T09:44:43.565",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 588,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-10-03",
+    "modificado": "2023-10-03T09:44:55.812",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 589,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2023-10-10",
+    "modificado": "2023-10-10T07:48:15.048",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 590,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2023-10-10",
+    "modificado": "2023-10-10T07:48:27.006",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 591,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-10-17",
+    "modificado": "2023-10-17T07:50:34.274",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 592,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 1,
+    "animal": 2,
+    "data": "2023-10-24",
+    "modificado": "2023-10-24T09:10:30.310",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 593,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-11-01",
+    "modificado": "2023-11-01T09:26:44.219",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 594,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-11-01",
+    "modificado": "2023-11-01T09:26:56.689",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 595,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-11-14",
+    "modificado": "2023-11-14T09:34:41.445",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 596,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-11-16",
+    "modificado": "2023-11-16T09:30:33.102",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 597,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-11-16",
+    "modificado": "2023-11-16T09:30:53.494",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 598,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-11-27",
+    "modificado": "2023-11-27T09:03:55.677",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 599,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-11-28",
+    "modificado": "2023-11-28T15:10:29.294",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 600,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2023-11-28",
+    "modificado": "2023-11-28T15:10:29.294",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": "FRAQUEZA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 601,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2023-11-28",
+    "modificado": "2023-11-28T15:10:29.294",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 602,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-11-28",
+    "modificado": "2023-11-28T15:10:29.294",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 603,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2023-11-28",
+    "modificado": "2023-11-28T15:10:29.294",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 604,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2023-11-28",
+    "modificado": "2023-11-28T15:10:29.294",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": "POSSIVEL PICADA DE COBRA"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 605,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-12-06",
+    "modificado": "2023-12-06T15:15:32.095",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 606,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-12-06",
+    "modificado": "2023-12-06T15:15:54.292",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 607,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2023-12-06",
+    "modificado": "2023-12-06T15:16:12.297",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 608,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2023-12-12",
+    "modificado": "2023-12-12T07:15:12.203",
+    "author": 1,
+    "entrada": 0,
+    "saida": 20,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 609,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-12-12",
+    "modificado": "2023-12-12T07:15:22.254",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 610,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-12-12",
+    "modificado": "2023-12-12T07:15:48.906",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 611,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2023-12-12",
+    "modificado": "2023-12-12T07:16:03.864",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 612,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2023-12-26",
+    "modificado": "2023-12-26T07:21:16.516",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 613,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-12-26",
+    "modificado": "2023-12-26T07:21:41.479",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 614,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-12-26",
+    "modificado": "2023-12-26T07:21:54.028",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 615,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2023-12-27",
+    "modificado": "2023-12-27T07:09:30.485",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 616,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2023-12-27",
+    "modificado": "2023-12-27T07:09:45.166",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 617,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2023-12-31",
+    "modificado": "2023-12-31T07:13:40.895",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 618,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2024-01-11",
+    "modificado": "2024-01-11T08:06:16.230",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 619,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-01-11",
+    "modificado": "2024-01-11T08:06:31.415",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 620,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-01-18",
+    "modificado": "2024-01-29T10:16:18.929",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 621,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-01-18",
+    "modificado": "2024-01-18T08:11:14.816",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 622,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-01-18",
+    "modificado": "2024-01-18T08:14:36.783",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 623,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2024-01-23",
+    "modificado": "2024-01-22T10:10:22.037",
+    "author": 1,
+    "entrada": 0,
+    "saida": 80,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 624,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-01-23",
+    "modificado": "2024-01-22T10:10:37.566",
+    "author": 1,
+    "entrada": 0,
+    "saida": 7,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 625,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-01-23",
+    "modificado": "2024-01-22T10:11:37.428",
+    "author": 1,
+    "entrada": 30,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 626,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-01-23",
+    "modificado": "2024-01-22T10:11:54.212",
+    "author": 1,
+    "entrada": 7,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 627,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2024-01-23",
+    "modificado": "2024-01-22T10:12:20.860",
+    "author": 1,
+    "entrada": 50,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 628,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-01-23",
+    "modificado": "2024-01-22T10:13:27.176",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 629,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T09:29:12.187",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 630,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T09:29:36.278",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 631,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T09:29:52.224",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 632,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T09:30:07.313",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 633,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T09:30:31.414",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 634,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T09:30:58.224",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 635,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T09:31:27.954",
+    "author": 1,
+    "entrada": 0,
+    "saida": 76,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 636,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T09:31:41.998",
+    "author": 1,
+    "entrada": 0,
+    "saida": 9,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 637,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T15:20:14.208",
+    "author": 1,
+    "entrada": 0,
+    "saida": 3,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 638,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T15:20:14.208",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 639,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T15:20:14.208",
+    "author": 1,
+    "entrada": 0,
+    "saida": 40,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 640,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T15:20:14.208",
+    "author": 1,
+    "entrada": 40,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 641,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T15:20:14.208",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": "TOURO"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 642,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 3,
+    "data": "2024-01-30",
+    "modificado": "2024-01-30T15:20:14.208",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 643,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-02-06",
+    "modificado": "2024-02-06T13:58:52.661",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 644,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2024-02-06",
+    "modificado": "2024-02-06T13:59:19.599",
+    "author": 1,
+    "entrada": 0,
+    "saida": 35,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 645,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-02-06",
+    "modificado": "2024-02-06T13:59:38.263",
+    "author": 1,
+    "entrada": 25,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 646,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-02-06",
+    "modificado": "2024-02-06T14:00:03.308",
+    "author": 1,
+    "entrada": 0,
+    "saida": 16,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 647,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-02-06",
+    "modificado": "2024-02-06T14:00:33.145",
+    "author": 1,
+    "entrada": 0,
+    "saida": 5,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 648,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2024-02-06",
+    "modificado": "2024-02-06T14:01:11.008",
+    "author": 1,
+    "entrada": 0,
+    "saida": 20,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 649,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2024-02-06",
+    "modificado": "2024-02-06T14:01:48.926",
+    "author": 1,
+    "entrada": 36,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 650,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2024-02-06",
+    "modificado": "2024-02-06T14:03:19.225",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 651,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2024-02-09",
+    "modificado": "2024-02-09T13:25:22.015",
+    "author": 1,
+    "entrada": 0,
+    "saida": 8,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 652,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2024-02-09",
+    "modificado": "2024-02-09T13:25:22.015",
+    "author": 1,
+    "entrada": 8,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 653,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-02-09",
+    "modificado": "2024-02-09T13:25:22.015",
+    "author": 1,
+    "entrada": 5,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 654,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2024-02-13",
+    "modificado": "2024-02-20T08:08:52.546",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 655,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-02-13",
+    "modificado": "2024-02-20T08:09:05.022",
+    "author": 1,
+    "entrada": 6,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 656,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2024-02-13",
+    "modificado": "2024-02-20T08:09:36.637",
+    "author": 1,
+    "entrada": 0,
+    "saida": 15,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 657,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2024-02-13",
+    "modificado": "2024-02-20T08:09:50.578",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 658,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 3,
+    "data": "2024-02-13",
+    "modificado": "2024-02-20T08:10:00.783",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 659,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-02-13",
+    "modificado": "2024-02-20T08:10:30.026",
+    "author": 1,
+    "entrada": 15,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 660,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2024-02-13",
+    "modificado": "2024-02-20T08:10:42.159",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 661,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 3,
+    "data": "2024-02-13",
+    "modificado": "2024-02-20T08:10:51.151",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 662,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-02-13",
+    "modificado": "2024-02-20T08:11:14.037",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 663,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2024-02-13",
+    "modificado": "2024-02-20T08:11:24.905",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 664,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2024-02-20",
+    "modificado": "2024-02-27T07:50:45.535",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 665,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T07:55:20.976",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 666,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T07:55:39.905",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 667,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T07:56:00.788",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 668,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T07:56:49.685",
+    "author": 1,
+    "entrada": 0,
+    "saida": 21,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 669,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T07:57:26.968",
+    "author": 1,
+    "entrada": 0,
+    "saida": 58,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 670,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T07:57:57.662",
+    "author": 1,
+    "entrada": 20,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 671,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T08:00:39.483",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 672,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T08:01:22.683",
+    "author": 1,
+    "entrada": 0,
+    "saida": 15,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 673,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T08:01:50.405",
+    "author": 1,
+    "entrada": 0,
+    "saida": 3,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 674,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T08:02:27.965",
+    "author": 1,
+    "entrada": 21,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 675,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T08:02:48.118",
+    "author": 1,
+    "entrada": 58,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 676,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T08:03:17.646",
+    "author": 1,
+    "entrada": 15,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 677,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2024-02-26",
+    "modificado": "2024-03-04T08:03:44.345",
+    "author": 1,
+    "entrada": 0,
+    "saida": 20,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 678,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2024-03-08",
+    "modificado": "2024-03-08T10:33:59.745",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 679,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-03-08",
+    "modificado": "2024-03-08T10:34:23.933",
+    "author": 1,
+    "entrada": 0,
+    "saida": 4,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 680,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-03-08",
+    "modificado": "2024-03-08T10:34:41.344",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 681,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2024-03-11",
+    "modificado": "2024-03-20T10:40:53.128",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 682,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-03-11",
+    "modificado": "2024-03-20T10:41:51.178",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 683,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-03-11",
+    "modificado": "2024-03-20T10:42:08.483",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 684,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-03-20",
+    "modificado": "2024-03-20T10:45:49.642",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 685,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-03-20",
+    "modificado": "2024-03-20T10:46:03.097",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 686,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-03-27",
+    "modificado": "2024-04-03T09:38:21.858",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 687,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2024-03-27",
+    "modificado": "2024-04-03T09:38:52.867",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 688,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-03-27",
+    "modificado": "2024-04-03T09:39:17.915",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 689,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-03-27",
+    "modificado": "2024-04-03T09:39:33.159",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 690,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2024-03-27",
+    "modificado": "2024-04-03T09:39:57.670",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 691,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-03-27",
+    "modificado": "2024-04-03T09:40:17.180",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 692,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-04-03",
+    "modificado": "2024-04-03T09:42:59.378",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 693,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-04-03",
+    "modificado": "2024-04-03T09:43:15.104",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 694,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-04-03",
+    "modificado": "2024-04-03T09:43:21.658",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 695,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-04-11",
+    "modificado": "2024-04-22T09:21:23.773",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 696,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-04-11",
+    "modificado": "2024-04-22T09:21:46.112",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 697,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2024-04-11",
+    "modificado": "2024-04-22T09:22:05.566",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 698,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-04-11",
+    "modificado": "2024-04-22T09:22:15.204",
+    "author": 1,
+    "entrada": 3,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 699,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2024-04-19",
+    "modificado": "2024-04-22T09:26:07.539",
+    "author": 1,
+    "entrada": 0,
+    "saida": 7,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 700,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-04-19",
+    "modificado": "2024-04-22T09:26:36.594",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 701,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2024-04-19",
+    "modificado": "2024-04-22T09:28:48.560",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 702,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2024-04-19",
+    "modificado": "2024-04-22T09:28:56.366",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 703,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2024-04-19",
+    "modificado": "2024-04-22T09:29:11.241",
+    "author": 1,
+    "entrada": 30,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 704,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-04-19",
+    "modificado": "2024-04-22T09:29:37.321",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 705,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2024-04-19",
+    "modificado": "2024-04-22T09:29:51.654",
+    "author": 1,
+    "entrada": 0,
+    "saida": 23,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 706,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-04-22",
+    "modificado": "2024-04-21T09:32:42.545",
+    "author": 1,
+    "entrada": 0,
+    "saida": 2,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 707,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-04-22",
+    "modificado": "2024-04-21T09:32:58.328",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 708,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2024-05-02",
+    "modificado": "2024-05-02T13:31:45.834",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 709,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-05-02",
+    "modificado": "2024-05-02T13:32:04.694",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 710,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-05-02",
+    "modificado": "2024-05-02T13:32:20.405",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 711,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2024-05-09",
+    "modificado": "2024-05-09T15:45:13.042",
+    "author": 1,
+    "entrada": 0,
+    "saida": 100,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 712,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2024-05-09",
+    "modificado": "2024-05-09T15:45:27.272",
+    "author": 1,
+    "entrada": 0,
+    "saida": 21,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 713,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-05-09",
+    "modificado": "2024-05-09T15:45:42.880",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 714,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-05-09",
+    "modificado": "2024-05-09T15:46:07.247",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 715,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2024-05-09",
+    "modificado": "2024-05-09T15:46:27.455",
+    "author": 1,
+    "entrada": 0,
+    "saida": 21,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 716,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-05-09",
+    "modificado": "2024-05-09T15:46:46.437",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 717,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2024-05-12",
+    "modificado": "2024-05-20T09:33:42.277",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 718,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-05-12",
+    "modificado": "2024-05-20T09:33:55.421",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 719,
+  "fields": {
+    "tipo_movimento": 3,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-05-20",
+    "modificado": "2024-05-20T09:37:18.574",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 720,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2024-05-20",
+    "modificado": "2024-05-20T09:37:48.686",
+    "author": 1,
+    "entrada": 23,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 721,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 4,
+    "animal": 4,
+    "data": "2024-05-20",
+    "modificado": "2024-05-20T09:38:10.509",
+    "author": 1,
+    "entrada": 0,
+    "saida": 23,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 722,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-05-20",
+    "modificado": "2024-05-20T09:38:30.021",
+    "author": 1,
+    "entrada": 0,
+    "saida": 17,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 723,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-05-25",
+    "modificado": "2024-05-31T07:19:59.432",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 724,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-05-25",
+    "modificado": "2024-05-31T07:20:19.908",
+    "author": 1,
+    "entrada": 4,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 725,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-05-25",
+    "modificado": "2024-05-31T07:20:36.424",
+    "author": 1,
+    "entrada": 7,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 726,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-05-25",
+    "modificado": "2024-05-31T07:21:28.636",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": "DOA\u00c7\u00c3O"
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 727,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-06-04",
+    "modificado": "2024-06-04T07:33:33.618",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 728,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-06-04",
+    "modificado": "2024-06-04T07:33:41.542",
+    "author": 1,
+    "entrada": 2,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 729,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2024-06-09",
+    "modificado": "2024-06-20T09:50:06.347",
+    "author": 1,
+    "entrada": 0,
+    "saida": 39,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 730,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 1,
+    "animal": 1,
+    "data": "2024-06-09",
+    "modificado": "2024-06-20T09:50:24.095",
+    "author": 1,
+    "entrada": 60,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 731,
+  "fields": {
+    "tipo_movimento": 1,
+    "fazenda": 1,
+    "animal": 4,
+    "data": "2024-06-09",
+    "modificado": "2024-06-20T09:50:39.043",
+    "author": 1,
+    "entrada": 0,
+    "saida": 1,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 732,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-06-09",
+    "modificado": "2024-06-20T09:51:01.106",
+    "author": 1,
+    "entrada": 0,
+    "saida": 67,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 733,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 2,
+    "animal": 1,
+    "data": "2024-06-09",
+    "modificado": "2024-06-20T09:51:13.275",
+    "author": 1,
+    "entrada": 39,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 734,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-06-09",
+    "modificado": "2024-06-20T09:51:23.625",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 735,
+  "fields": {
+    "tipo_movimento": 5,
+    "fazenda": 2,
+    "animal": 4,
+    "data": "2024-06-09",
+    "modificado": "2024-06-20T09:51:48.749",
+    "author": 1,
+    "entrada": 0,
+    "saida": 3,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 736,
+  "fields": {
+    "tipo_movimento": 6,
+    "fazenda": 3,
+    "animal": 4,
+    "data": "2024-06-09",
+    "modificado": "2024-06-20T09:52:07.246",
+    "author": 1,
+    "entrada": 10,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 737,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 1,
+    "data": "2024-06-09",
+    "modificado": "2024-06-20T09:52:22.432",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 738,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 4,
+    "animal": 2,
+    "data": "2024-06-09",
+    "modificado": "2024-06-20T09:52:31.285",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 739,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 2,
+    "animal": 2,
+    "data": "2024-06-20",
+    "modificado": "2024-06-20T09:55:01.758",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 740,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 1,
+    "data": "2024-06-20",
+    "modificado": "2024-06-20T09:55:12.644",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+},
+{
+  "model": "rebanho.quantidade",
+  "pk": 741,
+  "fields": {
+    "tipo_movimento": 4,
+    "fazenda": 3,
+    "animal": 2,
+    "data": "2024-06-20",
+    "modificado": "2024-06-20T09:55:19.131",
+    "author": 1,
+    "entrada": 1,
+    "saida": 0,
+    "obs": null
+  }
+}
+]
