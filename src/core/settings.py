@@ -85,15 +85,19 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 
 # DATABASES = {
 #    'default': config('DATABASE_URL')
 # }
 
+default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
+DATABASE_URL = os.getenv('DATABASE_URL', default=default_dburl)
+
+# Configura o banco de dados usando dj_database_url
 DATABASES = {
-            'default': config('DATABASE_URL', default=default_dburl, cast=dburl),
-            }
+    'default': dj_database_url.config(default=DATABASE_URL)
+}
+
 
 if os.environ.get('DATABASE_URL'):
    DATABASES['default'] = dj_database_url.config(default=os.environ['DATABASE_URL'])

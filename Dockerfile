@@ -37,8 +37,8 @@ WORKDIR /srv
 RUN chown -R srv:srv /srv
 
 # Execute as migrações e cole os arquivos estáticos
-RUN python manage.py migrate
-RUN python manage.py collectstatic --noinput
+#RUN python3 manage.py migrate
+#RUN python3 manage.py collectstatic --noinput
 
 # Expõe a porta 8000 (opcional, apenas para documentação)
 EXPOSE 8000
@@ -55,8 +55,12 @@ COPY --chown=srv Pipfile Pipfile.lock /srv/
 RUN pipenv install --system --deploy --ignore-pipfile && \
     rm -f /srv/Pipfile*
 
+RUN pipenv install psycopg
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
+
+#RUN pipenv run python manage.py migrate
+#RUN pipenv run python manage.py collectstatic --noinput
 
 # Cria um arquivo de ambiente se necessário (opcional, pode ser definido no docker-compose.yml)
 RUN touch /srv/core/.env
