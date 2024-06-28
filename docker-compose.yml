@@ -1,15 +1,16 @@
 services:
   redis:
     image: redis:latest
+    env_file:
+      - ./docker.env
     ports:
-      - "6379:6379"
+      - 127.0.0.1:6379:6379
     volumes:
       - redis_data:/data
-    restart: always
 
   web:
     build: .
-    image: my_django_app:latest
+    image: rbmanager:latest  # Nome da imagem para o seu aplicativo Django
     env_file:
       - ./docker.env
     healthcheck:
@@ -17,28 +18,14 @@ services:
       interval: 30s
       timeout: 10s
       retries: 5
+    ports:
+      - 0.0.0.0:80:8000
     volumes:
       - ./src:/srv:delegated
-      - ./staticfiles:/srv/staticfiles
-    command: ["gunicorn", "--bind", "0.0.0.0:8000", "core.wsgi:application"]
+    command: ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
     depends_on:
       - redis
-    restart: always
-
-  nginx:
-    image: nginx:latest
-    ports:
-      - "80:80"
-        #- "443:443"
-    volumes:
-        - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-          #- ./nginx/certs:/etc/nginx/certs:ro
-        - ./nginx/logs:/var/log/nginx
-        - ./staticfiles:/srv/staticfiles
-        - ./media:/srv/media
-    depends_on:
-        - web
-    restart: always
 
 volumes:
   redis_data:
+    driver: local
