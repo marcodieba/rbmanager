@@ -43,19 +43,22 @@ RUN chown -R srv:srv /srv
 # Expõe a porta 8000 (opcional, apenas para documentação)
 EXPOSE 8000
 
-# Usa o Dumb-init como entrypoint e inicia o Daphne
-ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-
-# CMD padrão, pode ser substituído pelo docker-compose.yml
-# CMD ["/usr/local/bin/daphne", "-b", "0.0.0.0", "-p", "8000", "core.asgi:application"]
-CMD ["pipenv", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
-
 # Instala as dependências Python usando Pipenv
 COPY --chown=srv Pipfile Pipfile.lock /srv/
 RUN pipenv install --system --deploy --ignore-pipfile && \
     rm -f /srv/Pipfile*
 
+RUN pip install gunicorn
 RUN pipenv install psycopg
+RUN pip install daphne
+
+# Usa o Dumb-init como entrypoint e inicia o Daphne
+ENTRYPOINT ["/usr/bin/dumb-init", "--"]
+
+# CMD padrão, pode ser substituído pelo docker-compose.yml
+CMD ["/usr/local/bin/daphne", "-b", "0.0.0.0", "-p", "8000", "core.asgi:application"]
+#CMD ["pipenv", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
+
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
 
