@@ -26,7 +26,7 @@ def financeiro(request):
                 saida=saida
             )
 
-        return HttpResponse('success_url')  # Redireciona para uma página de sucesso ou similar
+        return render(request, 'financeiro.html', {'form': form})  # Redireciona para uma página de sucesso ou similar
 
     else:
         form = FinanceiroForm()
