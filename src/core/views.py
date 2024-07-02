@@ -13,7 +13,7 @@ import locale
 import json
 locale.setlocale( locale.LC_ALL, '' )
 
-@login_required(login_url="admin/login/")
+#@login_required(login_url="admin/login/")
 def controle(request):
     data = date.today()
     ano = request.GET.get('filter_ano')

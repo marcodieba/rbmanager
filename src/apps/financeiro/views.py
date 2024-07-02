@@ -25,8 +25,9 @@ def financeiro(request):
                 entrada=entrada,
                 saida=saida
             )
-
-        return render(request, 'financeiro.html', {'form': form})  # Redireciona para uma página de sucesso ou similar
+        #if form.is_valid():
+        form = FinanceiroForm()
+        #return render(request, 'financeiro.html', {'form': form})  # Redireciona para uma página de sucesso ou similar
 
     else:
         form = FinanceiroForm()
