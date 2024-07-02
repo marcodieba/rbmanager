@@ -21,6 +21,7 @@
   <link href="{% static 'static_rebanho/css/sb-admin-2.min.css' %}" rel="stylesheet">
   <!-- Gerar RELATORIO -->
   <link rel="stylesheet" href="{% static 'static_rebanho/css/print-dashboard.css' %}">
+  <link rel="stylesheet" href="{% static 'static_rebanho/css/loading.css' %}">
   <!-- Custom styles for this page -->
   <link href="{% static 'static_rebanho/vendor/datatables/dataTables.bootstrap4.min.css' %}" rel="stylesheet">
   <style media="screen">
@@ -49,17 +50,17 @@
 <body id="page-top">
       <!--PreLoader-->
       <div id="preloader">
-            
+              
           <div id="status">&nbsp;</div>
           <div class="loader">
 
                   <div class="loader-pacman pacman"></div>
-                  <span class="title">Carregando...</span>
+                  {% comment %} <span class="title">Carregando...</span> {% endcomment %}
 
           </div>
 
       </div>
-      <!--PreLoader-->
+    <!--PreLoader-->
   <!-- Page Wrapper -->
   <div id="wrapper">
 
@@ -341,7 +342,9 @@
   <script src="{% static 'static_rebanho/vendor/datatables/dataTables.bootstrap4.min.js' %}"></script>
 
   <script src="{% static 'static_rebanho/vendor/chart.js/Chart.min.js' %}"></script>
-
+  <script src="{% static 'static_rebanho/vendor/jquery.js' %}"></script>
+  <script src="{% static 'static_rebanho/vendor/script.js' %}"></script>
+  
   <!-- Page level custom scripts -->
   <!-- <script src="{% static 'static_rebanho/js/demo/chart-area-demo.js' %}"></script> -->
   <!-- <script src="{% static 'static_rebanho/js/demo/chart-pie-demo.js' %}"></script> -->

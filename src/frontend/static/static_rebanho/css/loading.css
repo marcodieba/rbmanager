@@ -1,0 +1,148 @@
+div#preloader {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 99999;
+  
+  }
+  
+  .loader .title {
+  
+    color: var(--cor-branco);
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    text-align: center;
+  
+  }
+  
+  .loader {
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top:-50px; 
+    margin-left:-50px;
+  
+  }
+  
+  /*Loading*/
+  
+  :root {
+    --cor-amarelo: #ffe300;
+    --cor-branco: #ffffff;
+  }
+  
+  /* .loader-pacman {
+    
+    display: block;
+    margin-left: 33px;
+    margin-bottom: 20px;
+  
+  }
+  
+  .loader-pacman::before, .loader-pacman::after {
+    content: "";
+    position: absolute;
+  } */
+  
+  
+  /* .pacman {
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background: var(--cor-amarelo);
+    -webkit-animation-name: pacmandot;
+            animation-name: pacmandot;
+    transform: translateX(14px);
+  }
+  .pacman::before, .pacman::after {
+    border-radius: 50%;
+    border: 14px solid var(--cor-amarelo);
+    border-right-color: transparent;
+    top: -12px;
+    left: -24px;
+  }
+  .pacman, .pacman::before, .pacman::after {
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .pacman::before {
+    -webkit-animation-name: upperJaw;
+            animation-name: upperJaw;
+  }
+  .pacman::after {
+    -webkit-animation-name: lowerJaw;
+            animation-name: lowerJaw;
+  } */
+  
+  /* @-webkit-keyframes pacmandot {
+    0%, 50% {
+      background: var(--cor-branco);
+    }
+    51%, 100% {
+      background: none;
+    }
+    0%, 100% {
+      transform: translateX(19px);
+    }
+    50% {
+      transform: translateX(14px);
+    }
+  }
+  
+  @keyframes pacmandot {
+    0%, 50% {
+      background: var(--cor-branco);
+    }
+    51%, 100% {
+      background: none;
+    }
+    0%, 100% {
+      transform: translateX(19px);
+    }
+    50% {
+      transform: translateX(14px);
+    }
+  }
+  @-webkit-keyframes upperJaw {
+    50% {
+      transform: rotate(50deg) translate(2px, -2px);
+    }
+  }
+  @keyframes upperJaw {
+    50% {
+      transform: rotate(50deg) translate(2px, -2px);
+    }
+  }
+  @-webkit-keyframes lowerJaw {
+    50% {
+      transform: rotate(-50deg) translate(2px, 2px);
+    }
+  }
+  @keyframes lowerJaw {
+    50% {
+      transform: rotate(-50deg) translate(2px, 2px);
+    }
+  } */
+   /* HTML: <div class="loader"></div> */
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  clip-path: inset(0 3ch 0 0);
+  animation: l4 1s steps(4) infinite;
+}
+.loader:before {
+  content:"Loading..."
+}
+@keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}

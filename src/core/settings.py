@@ -154,7 +154,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Diretório onde os arquivos estáticos são colocados
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'static')]
 
 # Diretório onde os arquivos coletados são armazenados (para produção)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
