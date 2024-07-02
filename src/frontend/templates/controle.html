@@ -11,7 +11,7 @@
 <div class="d-sm-flex align-items-center justify-content-center mb-4 only-print">
   <h1 class="h3 mb-0 text-gray-800">Relatório Resumo</h1>
 </div>
-<form id="search-form" method="get" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+{% comment %} <form id="search-form" method="get" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
   <div class="input-group">
     <input name="filter_ano" type="text" id="filter_ano" class="form-control bg-light border-0 small" value="{{ request.GET.filter_ano }}" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
     <div class="input-group-append">
@@ -20,7 +20,7 @@
       </button>
     </div>
   </div>
-</form>
+</form> {% endcomment %}
 <!-- Content Row -->
 <div class="row">
   
