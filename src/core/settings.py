@@ -169,3 +169,17 @@ CSRF_TRUSTED_ORIGINS = [config('CSRF_TRUSTED_ORIGINS')]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# Adicione estas linhas para redirecionar todo o tráfego HTTP para HTTPS
+SECURE_SSL_REDIRECT = True
+
+# Defina isso para garantir que Django saiba que está por trás de um proxy reverso (Nginx)
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Segurança adicional
+SECURE_HSTS_SECONDS = 31536000  # 1 ano
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
