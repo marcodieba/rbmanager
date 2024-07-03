@@ -4,8 +4,9 @@
 {% block container %}
 
 <div class="container no-print">
-    <a href="{% url 'relfinanceiro' %}">Remover Filtros</a>
-    <div class="row">
+    
+    <div class="form-group">
+        
         <form method="get" class="form-row w-100">
             <div class="col-md-6 mb-3">
                 <label for="filtro">Filtrar Por Fazenda</label>
@@ -20,18 +21,22 @@
             </div>
         </form>
         <form method="get" class="form-row w-100">
-            <div class="col-md-6 mb-3">
+            <div class="col-md-3 mb-3">
                 <label for="data_inicio">Data Inicial</label>
                 <input type="date" name="data_inicio" id="data_inicio" class="form-control">
             </div>
-            <div class="col-md-6 mb-3">
+            <div class="col-md-3 mb-3">
                 <label for="data_fim">Data Final</label>
                 <input type="date" name="data_fim" id="data_fim" class="form-control">
             </div>
-            <div class="col-md-12 text-right">
-                <button type="submit" class="btn btn-sm btn-primary shadow-sm"><i class="fas fa-search"></i> Filtrar</button>
-            </div>
         </form>
+    </div>
+    <div class="col-md-6 float-left">
+        <a class="btn btn-sm btn-primary shadow-sm" href="{% url 'relfinanceiro' %}">Remover Filtros<a>
+        <button type="submit" class="btn btn-sm btn-primary shadow-sm"><i class="fas fa-search"></i> Filtrar</button>
+    </div>  
+    <div class="row">
+        
         <div class="col-md-12 text-right mb-3">
             <button onclick="window.print()" class="btn btn-sm btn-primary shadow-sm"><i class="fas fa-print"></i> Gerar Relatório</button>
         </div>
