@@ -40,16 +40,16 @@ def rebanho(request):
             animal = Animal.objects.get(id=animal_id)
             soma = int(entrada) - int(saida)
             total_geral_filtro = Quantidade.objects.filter(fazenda=fazenda, animal=animal)
-            query_total = Totais.objects.filter(fazenda=fazenda, animal=animal)
+            #query_total = Totais.objects.filter(fazenda=fazenda, animal=animal)
 
             if total_geral_filtro.exists():
                 total_entrada = total_geral_filtro.aggregate(Sum('entrada'))['entrada__sum'] or 0
                 total_saida = total_geral_filtro.aggregate(Sum('saida'))['saida__sum'] or 0
                 total_soma = total_entrada - total_saida
-                query_total.update(total_entrada=total_soma)
+             #   query_total.update(total_entrada=total_soma)
             else:
                 total_soma = 0
-                Totais.objects.create(fazenda=fazenda, animal=animal, total_entrada=soma)
+                #Totais.objects.create(fazenda=fazenda, animal=animal, total_entrada=soma)
 
             Quantidade.objects.create(
                 tipo_movimento=tipo_movimento,
