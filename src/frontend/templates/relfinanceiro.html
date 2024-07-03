@@ -43,8 +43,8 @@
         <h6 class="m-0 font-weight-bold text-primary">Relatório Financeiro</h6>
     </div>
     <div class="card-body">
-        <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <div class="table-container">
+            <table class="responsive-table">
                 <thead>
                     <tr>
                         <th>Data</th>
@@ -55,16 +55,7 @@
                         <th>Saída</th>
                     </tr>
                 </thead>
-                <tfoot>
-                    <tr>
-                        <th>Data</th>
-                        <th>Nº Nota</th>
-                        <th>Fazenda</th>
-                        <th>Descrição</th>
-                        <th>Entrada</th>
-                        <th>Saída</th>
-                    </tr>
-                </tfoot>
+                
                 <tbody>
                     {% for obj in dados %}
                     <tr>

@@ -4,15 +4,15 @@
 {% block container %}
 <div class="d-sm-flex align-items-center mb-4 no-print">
   <h1 class="h3 mb-0 text-gray-800"></h1>
-  <button onclick="window.print()" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i ></i> Gerar Relatório</button>
+  <button onclick="window.print()" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i></i> Gerar Relatório</button>
 </div>
 <div class="card mb-4">
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">Controle Reabanho</h6>
   </div>
   <div class="card-body">
-    <div class="table-responsive">
-      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+    <div class="table-container">
+      <table class="responsive-table">
         <thead>
           <tr>
             <th>Data</th>
@@ -24,53 +24,35 @@
             <th>Qt.Hoje</th>
           </tr>
         </thead>
-
         <tbody>
         {% for obj in dados %}
+          {% if obj.animal != 'TOURO' and obj.animal != 'NOVILHA' %}
+            {% if obj.total_anterior != 0 or obj.total_entrada != 0 or obj.total_saida != 0 or obj.total != 0 %}
               <tr>
-                {% if obj.animal != 'TOURO' and obj.animal != 'NOVILHA' %}
-                <span style="visibility:hidden;">{{ forloop.counter }}</span>
-                  <th style="font-size:12px;" scope="row">{{obj.data|date:"d/m/Y"}}</th><!--  {{obj.data|date:"d/m/Y"}} -->
-                  <td style="font-size:12px;">{{obj.fazenda_filtro}}</td>
-                  <td style="font-size:12px;">{{obj.animal}}</td>
-                  {% if obj.total_entrada.q or obj.total_saida.q %}
-                    <td class="qtanterior">{{obj.faz.total_entrada}}</td>
-                  {% else %}
-                    <td class="qtanterior">{{obj.total_anterior}}</td>
-                  {% endif %}
-                  <td class="qtentradat">{{obj.total_entrada}}</td>
-                  <td class="qtsaidat">{{obj.total_saida}}</td>
-                  <td class="qttotal">{{obj.total}}</td>
-                  {% if obj.animal == 'VACA' %}
+                <td data-label="Data">{{obj.data|date:"d/m/Y"}}</td>
+                <td data-label="Fazenda">{{obj.fazenda_filtro}}</td>
+                <td data-label="Animal">{{obj.animal}}</td>
+                {% if obj.total_entrada.q or obj.total_saida.q %}
+                  <td data-label="Qt.Anterior" class="qtanterior">{{obj.faz.total_entrada}}</td>
+                {% else %}
+                  <td data-label="Qt.Anterior" class="qtanterior">{{obj.total_anterior}}</td>
+                {% endif %}
+                <td data-label="Entrada" class="qtentradat">{{obj.total_entrada}}</td>
+                <td data-label="Saida" class="qtsaidat">{{obj.total_saida}}</td>
+                <td data-label="Qt.Hoje" class="qttotal">{{obj.total}}</td>
+                {% if obj.animal == 'VACA' %}
+                  </tbody>
+                    <tbody>
+                      <tr>
+                        <td style="border-bottom:1px solid #ccc; background:#000;" align="right" colspan="6"></td>
+                        <td class="text-center" style="border-bottom:1px solid #ccc; color:#fff; padding:0px; background:#000;">Total: <span>{{ obj.total_fazenda }}</span></td>
+                      </tr>
                     </tbody>
-                      <tbody>
-                        <tr>
-                          <td style="border-bottom:1px solid #ccc; Background:#000;" align=right colspan=6></td>
-                          <td class="text-center" style="border-bottom:1px solid #ccc; color:#fff; padding:0px; Background:#000;">Total: <span>{{ obj.total_fazenda }}</span> 
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>Data</th>
-                          <th>Fazenda</th>
-                          <th>Animal</th>
-                          <th>Qt.Anterior</th>
-                          <th>Entrada</th>
-                          <th>Saida</th>
-                          <th>Qt.Hoje</th>
-                        </tr>
-                      </tbody>
-                  {% endif %}
-              {% endif %}
+                {% endif %}
+              </tr>
+            {% endif %}
+          {% endif %}
         {% endfor %}
-        {% comment %} <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th>Qt. Anterior</th>
-          <th>Qt. Entrada</th>
-          <th>Qt. Saida</th>
-          <th>Qt. Geral</th>
-        </tr> {% endcomment %}
         <tr>
           <th scope="row"></th>
           <td></td>
@@ -80,38 +62,50 @@
           <td id="qtdsaida"></td>
           <td id="qtdtotal"></td>
         </tr>
-
-    </table>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 <script src="{% static 'static_rebanho/vendor/jquery/jquery.min.js' %}"></script>
 <script type="text/javascript">
   $(function(){
-
      var valorCalculado = 0;
      var qtsaida = 0;
      var qtentrada = 0;
      var qtanterior = 0;
 
-     $( ".qttotal" ).each(function() {
-       valorCalculado += parseInt($( this ).text());
+     $(".qttotal").each(function() {
+       valorCalculado += parseInt($(this).text());
      });
-     $( ".qtsaidat" ).each(function() {
-       qtsaida += parseInt($( this ).text());
+     $(".qtsaidat").each(function() {
+       qtsaida += parseInt($(this).text());
      });
-     $( ".qtentradat" ).each(function() {
-       qtentrada += parseInt($( this ).text());
+     $(".qtentradat").each(function() {
+       qtentrada += parseInt($(this).text());
      });
-     $( ".qtanterior" ).each(function() {
-       qtanterior += parseInt($( this ).text());
+     $(".qtanterior").each(function() {
+       qtanterior += parseInt($(this).text());
      });
-     $( "#qtdtotal" ).text(valorCalculado);
-      $( "#qtdsaida" ).text(qtsaida);
-      $( "#qtdentrada" ).text(qtentrada);
-      $( "#qtdanterior" ).text(qtanterior);
+     $("#qtdtotal").text(valorCalculado);
+     $("#qtdsaida").text(qtsaida);
+     $("#qtdentrada").text(qtentrada);
+     $("#qtdanterior").text(qtanterior);
    });
 
+   // Remover linhas que têm valores zerados
+   $(document).ready(function(){
+     $("tr").each(function() {
+       var total_anterior = parseInt($(this).find(".qtanterior").text());
+       var total_entrada = parseInt($(this).find(".qtentradat").text());
+       var total_saida = parseInt($(this).find(".qtsaidat").text());
+       var total = parseInt($(this).find(".qttotal").text());
 
+       if (total_anterior === 0 && total_entrada === 0 && total_saida === 0 && total === 0) {
+         $(this).remove();
+       }
+     });
+   });
 </script>
 <script>
  function printDiv(divName) {
@@ -123,6 +117,6 @@
  window.print();
 
  document.body.innerHTML = originalContents;
-      }
-  </script>
+ }
+</script>
 {% endblock %}

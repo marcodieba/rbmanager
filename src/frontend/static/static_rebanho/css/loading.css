@@ -37,6 +37,8 @@ div#preloader {
     --cor-branco: #ffffff;
   }
   
+
+
   /* .loader-pacman {
     
     display: block;
@@ -146,3 +148,77 @@ div#preloader {
   content:"Loading..."
 }
 @keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
+
+
+.table-container {
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.responsive-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .card {
+      margin: 0 !important;
+  }
+
+  .card-body {
+      font-size: 14px;
+      padding: 0 !important;
+  }
+
+  .responsive-table thead {
+      display: none;
+  }
+
+  .responsive-table, .responsive-table tbody, .responsive-table tr, .responsive-table td {
+      display: block;
+      width: 100%;
+  }
+
+  .responsive-table tr {
+      margin-bottom: 10px;
+  }
+
+  .responsive-table td {
+      text-align: left;
+      padding: 10px;
+      position: relative;
+      border: none;
+      border-bottom: 1px solid #ddd;
+  }
+
+  .responsive-table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 10px;
+  }
+
+  .responsive-table td:last-child {
+      border-bottom: 2px solid #007bff;
+  }
+
+  .responsive-table td[data-label="Fazenda"] {
+      background-color: #f8f9fc;
+      font-weight: bold;
+  }
+}
