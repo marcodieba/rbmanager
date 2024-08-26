@@ -1,0 +1,15 @@
+<!-- templates/editar_movimento.html -->
+{% extends 'base.html' %}
+{% block container %}
+<div class="container">
+    <h2 class="text-center">Editar Movimento Financeiro</h2>
+    <br>
+    <form method="post" class="needs-validation">
+        {% csrf_token %}
+        {{ form.as_p }} <!-- Renderiza o formulário com os campos e estilos padrão -->
+        <button class="btn btn-primary" type="submit">Salvar</button>
+        <a class="btn btn-secondary" href="{% url 'relfinanceiro' %}">Cancelar</a>
+    </form>
+</div>
+{% endblock %}
+

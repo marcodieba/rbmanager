@@ -58,6 +58,7 @@
                         <th>Descrição</th>
                         <th>Entrada</th>
                         <th>Saída</th>
+			<th>Ações</th>
                     </tr>
                 </thead>
                 
@@ -70,6 +71,15 @@
                         <td>{{ obj.descricao }}</td>
                         <td>R$ {{ obj.entrada|floatformat:2 }}</td>
                         <td>R$ {{ obj.saida|floatformat:2 }}</td>
+			<td>
+            			<!-- Botão de Editar -->
+            			<a href="{% url 'editar_movimento' obj.id %}" class="btn btn-warning btn-sm">Editar</a>
+            			<!-- Botão de Excluir -->
+            			<form method="post" action="{% url 'excluir_movimento' obj.id %}" style="display:inline;">
+                	{% csrf_token %}
+                		<button type="submit" class="btn btn-danger btn-sm">Excluir</button>
+            			</form>
+        		</td>
                     </tr>
                     {% endfor %}
                 </tbody>

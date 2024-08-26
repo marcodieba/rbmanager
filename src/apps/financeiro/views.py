@@ -1,9 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from apps.financeiro.models import Financeiro
 from apps.financeiro.forms import FinanceiroForm
 from datetime import date
+from django.contrib import messages
 from django.db.models import Sum
 
 @login_required(login_url="admin/login/")
@@ -33,6 +34,28 @@ def financeiro(request):
         form = FinanceiroForm()
 
     return render(request, 'financeiro.html', {'form': form})
+
+@login_required(login_url="admin/login/")
+def editar_movimento(request, id):
+    movimento = get_object_or_404(Financeiro, id=id)
+    if request.method == 'POST':
+        form = FinanceiroForm(request.POST, instance=movimento)
+        if form.is_valid():
+            form.save()
+            return redirect('relfinanceiro')
+    else:
+        form = FinanceiroForm(instance=movimento)
+    return render(request, 'editar_movimento.html', {'form': form})
+
+@login_required(login_url="admin/login/")
+def excluir_movimento(request, id):
+    movimento = get_object_or_404(Financeiro, id=id)
+    if request.method == 'POST':
+        movimento.delete()
+        messages.success(request, 'Movimento excluído com sucesso!')
+        return redirect('relfinanceiro')
+    return render(request, 'confirmar_exclusao.html', {'movimento': movimento})
+
 
 @login_required(login_url="admin/login/")
 def relfinanceiro(request):
@@ -77,6 +100,7 @@ def relfinanceiro(request):
                 'descricao': obj.descricao,
                 'entrada': obj.entrada,
                 'saida': obj.saida,
+                'id': obj.id
             })
 
         entrada_total = Financeiro.objects.aggregate(entrada=Sum('entrada'))['entrada'] or 0
