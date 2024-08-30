@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load humanize %}
 {% load mathfilters %}
 {% block container %}
 
@@ -10,17 +11,17 @@
         <form method="get" class="form-row w-100">
             <div class="col-md-6 mb-3">
                 <label for="filtro">Filtrar Por Fazenda</label>
-                <select name="filtro" id="filtro" class="form-control" onchange="this.form.submit()">
-                    <option value="0">{{ request.GET.filtro }}</option>
+                <select name="filtro" id="filtro" class="form-control">
+			<option value="{{ request.GET.filtro }}">{{ request.GET.filtro }}</option>
                     <option value="FAZ. ALVORADA">FAZ. ALVORADA</option>
                     <option value="FAZ. ASA BRANCA">FAZ. ASA BRANCA</option>
                     <option value="FAZ. MOSQUITO">FAZ. MOSQUITO</option>
                     <option value="FAZ. MR">FAZ. MR</option>
                     <option value="FAZ. SAO BENTO">FAZ. SÃO BENTO</option>
+		    <option value="CUSTO VARIAVEL">CUSTO VARIAVEL</option>
                 </select>
             </div>
-        </form>
-        <form method="get" class="form-row w-100">
+        
             <div class="col-md-3 mb-3">
                 <label for="data_inicio">Data Inicial</label>
                 <input type="date" name="data_inicio" id="data_inicio" class="form-control">
@@ -29,11 +30,11 @@
                 <label for="data_fim">Data Final</label>
                 <input type="date" name="data_fim" id="data_fim" class="form-control">
             </div>
+	   <button class="btn btn-sm btn-primary shadow-sm" type="submit"><i class="fas fa-search"></i> Filtrar</button>
         </form>
     </div>
     <div class="col-md-6 float-left">
         <a class="btn btn-sm btn-primary shadow-sm" href="{% url 'relfinanceiro' %}">Remover Filtros<a>
-        <button type="submit" class="btn btn-sm btn-primary shadow-sm"><i class="fas fa-search"></i> Filtrar</button>
     </div>  
     <div class="row">
         
@@ -64,7 +65,7 @@
                 
                 <tbody>
                     {% for obj in dados %}
-                    <tr>
+                    <tr style="font-size:0.8em !important;">
                         <td>{{ obj.data|date:"d/m/Y" }}</td>
                         <td>{{ obj.nr_nota }}</td>
                         <td>{{ obj.fazenda }}</td>
@@ -86,7 +87,7 @@
             </table>
         </div>
         <div class="p-2 flex-fill justify-content-end bd-highlight" style="border: 1px solid lavender; margin-top: 10px;">
-            <strong>Saldo:</strong> R$ {{ saldo|floatformat:2 }}
+		<strong>Saldo:</strong> R$ {{ saldo }}
         </div>
     </div>
 </div>

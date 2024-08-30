@@ -65,7 +65,7 @@ def relfinanceiro(request):
     filtro_dia = request.GET.get('data_fim')
     dados = []
 
-    queryset = Financeiro.objects.all().order_by('fazenda')
+    #queryset = Financeiro.objects.all().order_by('fazenda')
 
     if search:
         filtro_descricao = Financeiro.objects.filter(descricao__icontains=search)
@@ -78,34 +78,36 @@ def relfinanceiro(request):
         else:
             dados = Financeiro.objects.filter(fazenda__fazenda__icontains=search)
 
-    elif filtro:
-        dados = Financeiro.objects.filter(fazenda__fazenda__icontains=filtro)
+    elif filtro and filtro_mes == '':
+        dados = Financeiro.objects.filter(fazenda__fazenda__icontains=filtro).order_by('data')
+        saldo = calcular_saldo(dados)
+
+    elif filtro_mes and filtro_dia and filtro:
+        dados = Financeiro.objects.filter(data__range=[filtro_mes, filtro_dia], fazenda__fazenda__icontains=filtro).order_by('data')
         saldo = calcular_saldo(dados)
 
     elif filtro_mes and filtro_dia:
-        dados = Financeiro.objects.filter(data__range=[filtro_mes, filtro_dia])
-        saldo = calcular_saldo(dados)
-
-    elif filtro_mes:
-        filtro_dia = date.today()
-        dados = Financeiro.objects.filter(data__range=[filtro_mes, filtro_dia])
+        #filtro_dia = date.today()
+        dados = Financeiro.objects.filter(data__range=[filtro_mes, filtro_dia]).order_by('data')
         saldo = calcular_saldo(dados)
 
     else:
-        for obj in queryset:
-            dados.append({
-                'data': obj.data,
-                'fazenda': obj.fazenda,
-                'nr_nota': obj.nr_nota,
-                'descricao': obj.descricao,
-                'entrada': obj.entrada,
-                'saida': obj.saida,
-                'id': obj.id
-            })
+        #for obj in queryset:
+        #    dados.append({
+        #        'data': obj.data,
+        #        'fazenda': obj.fazenda,
+        #        'nr_nota': obj.nr_nota,
+        #        'descricao': obj.descricao,
+        #        'entrada': obj.entrada,
+        #        'saida': obj.saida,
+        #        'id': obj.id
+        #    })
 
         entrada_total = Financeiro.objects.aggregate(entrada=Sum('entrada'))['entrada'] or 0
         saida_total = Financeiro.objects.aggregate(saida=Sum('saida'))['saida'] or 0
-        saldo = round(entrada_total - saida_total, 2)
+        saldo_ = round(entrada_total - saida_total, 2)
+
+        saldo = f"{saldo_:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
     context = {
         'saldo': saldo,
@@ -118,4 +120,4 @@ def calcular_saldo(dados):
     entrada = dados.aggregate(total_entrada=Sum('entrada'))['total_entrada'] or 0
     saida = dados.aggregate(total_saida=Sum('saida'))['total_saida'] or 0
     saldo = entrada - saida
-    return saldo
+    return f"{saldo:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")

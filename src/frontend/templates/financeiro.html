@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block container %}
-<div class="container">
+<div class="container-fluid">
     <div>
         <h2 class="text-center">FINANCEIRO</h2>
         <br>
@@ -28,30 +28,30 @@
                             Por favor, forneça um número de nota fiscal.
                         </div>
                     </div>
-                    <div class="col-md-2 mb-3">
+                    <div class="col-md-3 mb-3">
                         <label for="descricao">DESCRIÇÃO</label>
                         <input type="text" name="descricao[]" class="form-control">
                     </div>
                     <div class="col-md-2 mb-3">
                         <label for="entrada">ENTRADA</label>
-                        <input type="number" step="0.01" name="entrada[]" class="form-control" value="0" required>
+                        <input style="appearance: textfield;" type="number" step="0.01" name="entrada[]" class="form-control" value="" placeholder="00,00">
                         <div class="invalid-feedback">
                             Por favor, forneça um valor de entrada.
                         </div>
                     </div>
                     <div class="col-md-2 mb-3">
                         <label for="saida">SAÍDA</label>
-                        <input type="number" step="0.01" name="saida[]" class="form-control" value="0" required>
+                        <input style="appearance: textfield;" type="number" step="0.01" name="saida[]" class="form-control" value="" required placeholder="00,00"> 
                         <div class="invalid-feedback">
                             Por favor, forneça um valor de saída.
                         </div>
                     </div>
-                    <div class="col-md-2 mb-3 d-flex align-items-end">
-                        <button type="button" class="btn btn-danger remove-item">Remover</button>
+                    <div class="col-md-1 mb-3 d-flex align-items-end">
+                        <button type="button" class="btn btn-danger remove-item btn-sm">Remover</button>
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-success" id="add-item">Adicionar Item</button>
+            <button type="button" class="btn btn-success btn-sm" id="add-item">Adicionar Item</button>
             <br><br>
             <button class="btn btn-primary" type="submit">Enviar</button>
         </form>
