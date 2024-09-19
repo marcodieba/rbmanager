@@ -34,14 +34,14 @@
                     </div>
                     <div class="col-md-2 mb-3">
                         <label for="entrada">ENTRADA</label>
-                        <input style="appearance: textfield;" type="number" step="0.01" name="entrada[]" class="form-control" value="" placeholder="00,00">
+                        <input style="appearance: textfield;" type="number" step="0.01" name="entrada[]" class="form-control" value="0.00" placeholder="00,00">
                         <div class="invalid-feedback">
                             Por favor, forneça um valor de entrada.
                         </div>
                     </div>
                     <div class="col-md-2 mb-3">
                         <label for="saida">SAÍDA</label>
-                        <input style="appearance: textfield;" type="number" step="0.01" name="saida[]" class="form-control" value="" required placeholder="00,00"> 
+                        <input style="appearance: textfield;" type="number" step="0.01" name="saida[]" class="form-control" value="0.00" required placeholder="00,00"> 
                         <div class="invalid-feedback">
                             Por favor, forneça um valor de saída.
                         </div>
@@ -69,14 +69,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Função para limpar o valor do campo ao clicar
+    function clearOnClick(input) {
+        input.addEventListener('focus', function() {
+            if (input.value === '0.00') {
+                input.value = '';
+            }
+        });
+
+        input.addEventListener('blur', function() {
+            if (input.value === '') {
+                input.value = '0.00';
+            }
+        });
+    }
+
     addItemButton.addEventListener('click', function() {
         var newItem = itemsContainer.querySelector('.item').cloneNode(true);
-        newItem.querySelectorAll('input').forEach(input => input.value = '');
+        newItem.querySelectorAll('input').forEach(input => {
+            if (input.name === 'entrada[]' || input.name === 'saida[]') {
+                input.value = '0.00'; // Preenche com 0.00
+                clearOnClick(input); // Adiciona o evento de limpar ao clicar
+            } else {
+                input.value = ''; // Limpa outros campos
+            }
+        });
         itemsContainer.appendChild(newItem);
         addRemoveEvent(newItem.querySelector('.remove-item'));
     });
 
     itemsContainer.querySelectorAll('.remove-item').forEach(addRemoveEvent);
+
+    // Adicionando a funcionalidade de limpar ao clicar nos campos "entrada" e "saida" existentes
+    itemsContainer.querySelectorAll('input[name="entrada[]"], input[name="saida[]"]').forEach(clearOnClick);
 
     // Adicionando validação de formulário do Bootstrap
     (function() {
@@ -96,4 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
     })();
 });
 </script>
+
+
 {% endblock %}

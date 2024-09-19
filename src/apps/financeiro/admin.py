@@ -4,7 +4,7 @@ from .models import Financeiro
 
 @admin.register(Financeiro)
 class FinanceiroAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['fazenda', 'descricao', 'entrada', 'saida', 'data']
 	# fieldsets = [
 	# 	(None, {'fields':['title','description','video','created_date']}),
 	# ]
