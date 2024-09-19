@@ -7,7 +7,9 @@ ARG DEBIAN_FRONTEND=noninteractive
 ENV LANG=pt_BR.UTF-8 \
     LANGUAGE=pt_BR.UTF-8 \
     LC_ALL=pt_BR.UTF-8 \
-    PYTHONUNBUFFERED=1
+    PYTHONUNBUFFERED=1 \
+    # Railway definirá a porta correta no momento da execução
+    PORT=8000 
 
 # Atualiza lista de pacotes e instala apt-transport-https
 RUN apt-get update && \
@@ -18,7 +20,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         apt-utils \
         locales \
-	redis-tools \
+        redis-tools \
         dumb-init \
         httpie \
         python3-pip \
@@ -37,13 +39,6 @@ RUN useradd -m -d /srv srv
 WORKDIR /srv
 RUN chown -R srv:srv /srv
 
-# Execute as migrações e cole os arquivos estáticos
-#RUN python3 manage.py migrate
-#RUN python3 manage.py collectstatic --noinput
-
-# Expõe a porta 8000 (opcional, apenas para documentação)
-EXPOSE 8000
-
 # Instala as dependências Python usando Pipenv
 COPY --chown=srv Pipfile Pipfile.lock /srv/
 RUN pipenv install --system --deploy --ignore-pipfile && \
@@ -56,15 +51,11 @@ RUN pip install daphne
 # Usa o Dumb-init como entrypoint e inicia o Daphne
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
-# CMD padrão, pode ser substituído pelo docker-compose.yml
-CMD ["/usr/local/bin/daphne", "-b", "0.0.0.0", "-p", "8000", "core.asgi:application"]
-#CMD ["pipenv", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
+# CMD padrão, usa a variável de ambiente PORT definida pelo Railway
+CMD ["/usr/local/bin/daphne", "-b", "0.0.0.0", "-p", "$PORT", "core.asgi:application"]
 
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
 
 #RUN pipenv run python manage.py migrate
 #RUN pipenv run python manage.py collectstatic --noinput
-
-# Cria um arquivo de ambiente se necessário (opcional, pode ser definido no docker-compose.yml)
-RUN touch /srv/core/.env
