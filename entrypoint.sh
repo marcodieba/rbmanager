@@ -13,4 +13,4 @@
 #!/bin/bash
 
 # Expande a variável de ambiente PORT e executa o Daphne
-exec daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
+exec daphne -b 0.0.0.0 -p ${PORT:-8001} core.asgi:application
