@@ -45,6 +45,8 @@ RUN pipenv install --system --deploy --ignore-pipfile && \
 RUN pip install gunicorn
 RUN pipenv install psycopg
 RUN pip install daphne
+RUN pip install twisted[http2,tls]
+
 
 # Copia o script de entrada
 COPY --chown=srv:srv entrypoint.sh /srv/entrypoint.sh
