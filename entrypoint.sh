@@ -9,7 +9,7 @@ pipenv install --deploy --ignore-pipfile
 #pipenv run python manage.py migrate
 
 # Colete os arquivos estáticos
-pipenv run python manage.py collectstatic --noinput
+exec pipenv run python manage.py collectstatic --noinput
 
 # Expande a variável de ambiente PORT e executa o Daphne
 exec pipenv run daphne -b 0.0.0.0 -p ${PORT:-8080} core.asgi:application
