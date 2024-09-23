@@ -48,8 +48,6 @@ RUN pip install daphne
 RUN pip install twisted[http2,tls]
 
 
-RUN python3 /srv/manage.py collectstatic --noinput
-
 # Copia o script de entrada
 COPY --chown=srv:srv entrypoint.sh /srv/entrypoint.sh
 RUN chmod +x /srv/entrypoint.sh

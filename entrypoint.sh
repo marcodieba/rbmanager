@@ -2,8 +2,8 @@
 set -e
 
 # Ativa o ambiente virtual do Pipenv
-export PIPENV_VENV_IN_PROJECT=1
-pipenv install --deploy --ignore-pipfile
+# export PIPENV_VENV_IN_PROJECT=1
+# pipenv install --deploy --ignore-pipfile
 
 # # Execute as migrações
 # pipenv run python manage.py migrate
