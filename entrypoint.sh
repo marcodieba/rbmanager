@@ -11,9 +11,9 @@ pipenv install --deploy --ignore-pipfile
 # # Colete os arquivos estáticos
 # pipenv run python manage.py collectstatic --noinput
 
-if [ "$RUN_COLLECTSTATIC" = "true" ]; then
-    python manage.py collectstatic --noinput
-fi
+# if [ "$RUN_COLLECTSTATIC" = "true" ]; then
+#     python manage.py collectstatic --noinput
+# fi
 
 
 # Expande a variável de ambiente PORT e executa o Daphne
