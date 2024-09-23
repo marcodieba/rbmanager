@@ -1,15 +1,14 @@
 #!/bin/bash
 set -e
 
-# Ativa o ambiente virtual do Pipenv
-export PIPENV_VENV_IN_PROJECT=1
-pipenv install --deploy --ignore-pipfile
-
-# Execute as migrações
-#pipenv run python manage.py migrate
+# # Execute as migrações
+# pipenv run python manage.py migrate
 
 # Colete os arquivos estáticos
-exec pipenv run python manage.py collectstatic --noinput
+run python3 manage.py collectstatic --noinput
+
+# # Execute o comando passado como argumento (ou padrão do Dockerfile)
+# exec "$@"
 
 # Expande a variável de ambiente PORT e executa o Daphne
-exec pipenv run daphne -b 0.0.0.0 -p ${PORT:-8080} core.asgi:application
+exec daphne -b 0.0.0.0 -p ${PORT:-8080} core.asgi:application
