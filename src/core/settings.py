@@ -56,6 +56,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -160,6 +161,11 @@ STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'static')]
 
 # Diretório onde os arquivos coletados são armazenados (para produção)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# WhiteNoise settings
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
 
 
 CSRF_TRUSTED_ORIGINS = [config('CSRF_TRUSTED_ORIGINS')]
