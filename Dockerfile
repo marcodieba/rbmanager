@@ -7,7 +7,9 @@ ARG DEBIAN_FRONTEND=noninteractive
 ENV LANG=pt_BR.UTF-8 \
     LANGUAGE=pt_BR.UTF-8 \
     LC_ALL=pt_BR.UTF-8 \
-    PYTHONUNBUFFERED=1
+    PYTHONUNBUFFERED=1 \
+    # Railway definirá a porta correta no momento da execução
+    PORT=8000
 
 # Atualiza lista de pacotes e instala apt-transport-https
 RUN apt-get update && \
@@ -46,12 +48,11 @@ RUN pip install gunicorn
 RUN pipenv install psycopg
 RUN pip install daphne
 
-# Copia o script de entrada
-COPY --chown=srv:srv entrypoint.sh /srv/entrypoint.sh
-RUN chmod +x /srv/entrypoint.sh
+# Usa o Dumb-init como entrypoint
+ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
-# Usa o Dumb-init como entrypoint e inicia o Daphne com o script
-ENTRYPOINT ["/usr/bin/dumb-init", "--", "/srv/entrypoint.sh"]
+# CMD padrão, Railway definirá a variável de ambiente PORT
+CMD /usr/local/bin/daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
 
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
