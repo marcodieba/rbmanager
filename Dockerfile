@@ -38,7 +38,8 @@ RUN chown -R srv:srv /srv
 
 # Copia o arquivo requirements.txt e instala as dependências
 COPY --chown=srv:srv requirements.txt /srv/
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt && \
+    daphne --help  # Verifica a instalação do daphne
 
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
