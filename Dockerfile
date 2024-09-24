@@ -61,6 +61,8 @@ COPY --chown=srv:srv ./entrypoint.sh /srv/entrypoint.sh
 
 RUN chmod +x /srv/entrypoint.sh
 
+RUN mkdir -p /srv/staticfiles && chown -R srv:srv /srv/staticfiles
+
 # Execute as migrações e colete os arquivos estáticos durante a construção
 # RUN python manage.py migrate --noinput
 RUN python manage.py collectstatic --noinput
