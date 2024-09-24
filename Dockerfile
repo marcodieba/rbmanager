@@ -8,8 +8,8 @@ ENV LANG=pt_BR.UTF-8 \
     LANGUAGE=pt_BR.UTF-8 \
     LC_ALL=pt_BR.UTF-8 \
     PYTHONUNBUFFERED=1 \
-    #Railway definirá a porta correta no momento da execução
-    PORT=8000 
+    # Railway definirá a porta correta no momento da execução
+    PORT=8000
 
 # Atualiza lista de pacotes e instala apt-transport-https
 RUN apt-get update && \
@@ -48,14 +48,11 @@ RUN pip install gunicorn
 RUN pipenv install psycopg
 RUN pip install daphne
 
-# Usa o Dumb-init como entrypoint e inicia o Daphne
+# Usa o Dumb-init como entrypoint
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
-# CMD padrão, usa a variável de ambiente PORT definida pelo Railway
-CMD ["/usr/local/bin/daphne", "-b", "0.0.0.0", "-p", "$PORT", "core.asgi:application"]
+# CMD padrão, Railway definirá a variável de ambiente PORT
+CMD /usr/local/bin/daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
 
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
-
-#RUN pipenv run python manage.py migrate
-#RUN pipenv run python manage.py collectstatic --noinput
