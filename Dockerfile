@@ -27,7 +27,10 @@ RUN apt-get update && \
         python3-setuptools \
         gettext \
         libpq-dev && \
-    python3 -m pip install --upgrade pip
+    python3 -m pip install --upgrade pip && \
+    python3 -m pip install pipenv && \
+    echo "$LANG UTF-8" > /etc/locale.gen && \
+    locale-gen
 
 # Criação do usuário 'srv'
 RUN useradd -m -d /srv srv
@@ -38,17 +41,30 @@ RUN chown -R srv:srv /srv
 
 # Copia o arquivo requirements.txt e instala as dependências
 COPY --chown=srv:srv requirements.txt /srv/
-RUN pip install --no-cache-dir -r requirements.txt  # Instala dependências do requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copia o script de entrada e garante que ele tenha permissão de execução
-COPY --chown=srv:srv ./entrypoint.sh /srv/entrypoint.sh
-RUN chmod +x /srv/entrypoint.sh
+# # Instala as dependências Python usando Pipenv
+# COPY --chown=srv Pipfile Pipfile.lock /srv/
+# RUN pipenv install --system --deploy --ignore-pipfile && \
+#     rm -f /srv/Pipfile*
 
-# Copia o código fonte da aplicação
-COPY --chown=srv:srv ./src /srv
+RUN pip install gunicorn
+RUN pipenv install psycopg
+RUN pip install daphne
+RUN pip install whitenoise  # Instalação do WhiteNoise
 
 # Usa o Dumb-init como entrypoint
-ENTRYPOINT ["/usr/bin/dumb-init", "--", "/srv/entrypoint.sh"]
+ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
-# CMD padrão, usa a variável de ambiente PORT definida pelo Railway
-# CMD ["daphne", "-b", "0.0.0.0", "-p", "$PORT", "core.asgi:application"]
+# CMD padrão, Railway definirá a variável de ambiente PORT
+CMD /usr/local/bin/daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
+
+# Copia o código fonte da aplicação e o entrypoint
+COPY --chown=srv:srv ./src /srv
+COPY --chown=srv:srv ./entrypoint.sh /srv/entrypoint.sh
+
+RUN chmod +x /srv/entrypoint.sh
+
+# Execute as migrações e colete os arquivos estáticos durante a construção
+# RUN python manage.py migrate --noinput
+RUN python manage.py collectstatic --noinput
