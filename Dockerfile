@@ -27,8 +27,10 @@ RUN apt-get update && \
         python3-setuptools \
         gettext \
         libpq-dev && \
-    python3 -m pip install --upgrade pip \
-    python3 -m pip install pipenv && \
+        python3 -m pip install --upgrade pip && \
+        python3 -m pip install pipenv && \
+        echo "pt_BR.UTF-8 UTF-8" > /etc/locale.gen && \
+        locale-gen
 
 # Criação do usuário 'srv'
 RUN useradd -m -d /srv srv
