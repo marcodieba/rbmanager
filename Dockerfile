@@ -59,7 +59,10 @@ COPY --chown=srv:srv ./entrypoint.sh /srv/entrypoint.sh
 RUN chmod +x /srv/entrypoint.sh
 
 # Usa o Dumb-init como entrypoint
-ENTRYPOINT ["/usr/bin/dumb-init", "--"]
+# Usa o Dumb-init como entrypoint
+ENTRYPOINT ["/usr/bin/dumb-init", "--", "/srv/entrypoint.sh"]
 
-# CMD padrão, usa a variável de ambiente PORT definida pelo Railway
-CMD ["daphne", "-b", "0.0.0.0", "-p", "$PORT", "core.asgi:application"]
+# ENTRYPOINT ["/usr/bin/dumb-init", "--"]
+
+# # CMD padrão, usa a variável de ambiente PORT definida pelo Railway
+# CMD ["daphne", "-b", "0.0.0.0", "-p", "$PORT", "core.asgi:application"]
