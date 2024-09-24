@@ -52,10 +52,10 @@ RUN pip install daphne
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
 # CMD padrão, usa a variável de ambiente PORT definida pelo Railway
-CMD ["/usr/local/bin/daphne", "-b", "0.0.0.0", "-p", "$PORT", "core.asgi:application"]
+# CMD ["/usr/local/bin/daphne", "-b", "0.0.0.0", "-p", "$PORT", "core.asgi:application"]
 
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
 
 #RUN pipenv run python manage.py migrate
-#RUN pipenv run python manage.py collectstatic --noinput
+RUN pipenv run python manage.py collectstatic --noinput
