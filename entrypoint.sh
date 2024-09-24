@@ -8,7 +8,7 @@ sleep 10
 
 # Execute as migrações
 echo "Executando migrações..."
-pipenv run python manage.py migrate --noinput
+# pipenv run python manage.py migrate --noinput
 
 # Colete os arquivos estáticos
 echo "Coletando arquivos estáticos..."
