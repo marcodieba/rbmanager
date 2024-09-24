@@ -27,7 +27,8 @@ RUN apt-get update && \
         python3-setuptools \
         gettext \
         libpq-dev && \
-    python3 -m pip install --upgrade pip
+    python3 -m pip install --upgrade pip \
+    python3 -m pip install pipenv && \
 
 # Criação do usuário 'srv'
 RUN useradd -m -d /srv srv
