@@ -2,11 +2,8 @@
 set -euo 
 #pipefail
 
-# Defina PYTHONPATH
-export PYTHONPATH=/srv
-
-# Debug: Listar pacotes instalados
-pip list
+# Verifique se a variável PORT está definida, caso contrário use 8080
+PORT="${PORT:-8080}"
 
 # Execute as migrações
 python manage.py migrate
@@ -15,4 +12,4 @@ python manage.py migrate
 python manage.py collectstatic --noinput
 
 # Expande a variável de ambiente PORT e executa o Daphne
-exec daphne -b 0.0.0.0 -p "${PORT:-8080}" core.asgi:application
+exec daphne -b 0.0.0.0 -p "$PORT" core.asgi:application
