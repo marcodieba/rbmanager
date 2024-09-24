@@ -8,8 +8,8 @@ ENV LANG=pt_BR.UTF-8 \
     LANGUAGE=pt_BR.UTF-8 \
     LC_ALL=pt_BR.UTF-8 \
     PYTHONUNBUFFERED=1 \
-    PORT=8000  
-    # Railway definirá a porta correta no momento da execução
+    PORT=8000 
+     # Railway definirá a porta correta no momento da execução
 
 # Atualiza lista de pacotes e instala apt-transport-https
 RUN apt-get update && \
@@ -29,7 +29,7 @@ RUN apt-get update && \
         libpq-dev && \
     python3 -m pip install --upgrade pip && \
     python3 -m pip install pipenv && \
-    echo "$LANG UTF-8" > /etc/locale.gen && \
+    echo "pt_BR.UTF-8 UTF-8" > /etc/locale.gen && \
     locale-gen
 
 # Criação do usuário 'srv'
@@ -39,30 +39,20 @@ RUN useradd -m -d /srv srv
 WORKDIR /srv
 RUN chown -R srv:srv /srv
 
-# Instala as dependências Python usando Pipenv
+# Copia os arquivos de dependência
 COPY --chown=srv Pipfile Pipfile.lock /srv/
 RUN pipenv install --system --deploy --ignore-pipfile && \
     rm -f /srv/Pipfile*
 
-RUN pip install gunicorn
-RUN pipenv install psycopg
-RUN pip install daphne
-RUN pip install whitenoise  # Instalação do WhiteNoise
+# Instala pacotes adicionais
+RUN pip install gunicorn daphne psycopg
 
-# Usa o Dumb-init como entrypoint
-ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-
-# CMD padrão, Railway definirá a variável de ambiente PORT
-CMD /usr/local/bin/daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
-
-# Copia o código fonte da aplicação e o entrypoint
+# Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
-COPY --chown=srv:srv ./entrypoint.sh /srv/entrypoint.sh
 
+# Copia o script de entrada e garante que ele tenha permissão de execução
+COPY --chown=srv:srv ./entrypoint.sh /srv/entrypoint.sh
 RUN chmod +x /srv/entrypoint.sh
 
-RUN mkdir -p /srv/staticfiles && chown -R srv:srv /srv/staticfiles
-
-# Execute as migrações e colete os arquivos estáticos durante a construção
-# RUN python manage.py migrate --noinput
-RUN python manage.py collectstatic --noinput
+# Usa o Dumb-init como entrypoint
+ENTRYPOINT ["/usr/bin/dumb-init", "--", "/srv/entrypoint.sh"]

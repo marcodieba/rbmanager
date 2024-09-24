@@ -2,14 +2,18 @@
 set -euo 
 #pipefail
 
+# Aguardar alguns segundos para garantir que o banco de dados esteja pronto
+echo "Aguardando o banco de dados estar pronto..."
+sleep 10
+
 # Execute as migrações
-echo "Rodando migrações..."
-python manage.py migrate --noinput
+echo "Executando migrações..."
+pipenv run python manage.py migrate --noinput
 
 # Colete os arquivos estáticos
 echo "Coletando arquivos estáticos..."
-python manage.py collectstatic --noinput
+pipenv run python manage.py collectstatic --noinput
 
-# Inicie o Daphne
-echo "Iniciando Daphne no endereço 0.0.0.0:${PORT:-8000}..."
+# Expande a variável de ambiente PORT e executa o Daphne
+echo "Iniciando o servidor Daphne na porta ${PORT:-8000}..."
 exec daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
