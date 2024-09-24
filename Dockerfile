@@ -40,6 +40,10 @@ RUN chown -R srv:srv /srv
 COPY --chown=srv:srv requirements.txt /srv/
 RUN pip install --no-cache-dir -r requirements.txt  # Instala dependências do requirements.txt
 
+# Copia o script de entrada e garante que ele tenha permissão de execução
+COPY --chown=srv:srv ./entrypoint.sh /srv/entrypoint.sh
+RUN chmod +x /srv/entrypoint.sh
+
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
 
