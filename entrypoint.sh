@@ -6,6 +6,8 @@ set -euo
 echo "Aguardando o banco de dados estar pronto..."
 sleep 10
 
+python3 -m pip install pipenv
+
 # Execute as migrações
 echo "Executando migrações..."
 # pipenv run python manage.py migrate --noinput
