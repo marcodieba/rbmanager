@@ -2,14 +2,14 @@
 set -euo 
 #pipefail
 
-# Verifique se a variável PORT está definida, caso contrário use 8080
-PORT="${PORT:-8080}"
-
 # Execute as migrações
-python manage.py migrate
+echo "Rodando migrações..."
+python manage.py migrate --noinput
 
 # Colete os arquivos estáticos
+echo "Coletando arquivos estáticos..."
 python manage.py collectstatic --noinput
 
-# Expande a variável de ambiente PORT e executa o Daphne
-exec daphne -b 0.0.0.0 -p "$PORT" core.asgi:application
+# Inicie o Daphne
+echo "Iniciando Daphne no endereço 0.0.0.0:${PORT:-8000}..."
+exec daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
