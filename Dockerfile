@@ -58,4 +58,4 @@ CMD /usr/local/bin/daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
 
-RUN pipenv run python manage.py collectstatic --noinput
+# RUN pipenv run python manage.py collectstatic --noinput
