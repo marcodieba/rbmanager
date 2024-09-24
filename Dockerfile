@@ -47,6 +47,7 @@ RUN pipenv install --system --deploy --ignore-pipfile && \
 RUN pip install gunicorn
 RUN pipenv install psycopg
 RUN pip install daphne
+RUN pip install whitenoise
 
 # Usa o Dumb-init como entrypoint
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
@@ -56,3 +57,5 @@ CMD /usr/local/bin/daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
 
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
+
+RUN pipenv run python manage.py collectstatic --noinput
