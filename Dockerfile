@@ -47,12 +47,13 @@ RUN pipenv install --system --deploy --ignore-pipfile && \
 RUN pip install gunicorn
 RUN pipenv install psycopg
 RUN pip install daphne
+RUN pip install -U 'Twisted[tls,http2]'
 
 # Usa o Dumb-init como entrypoint
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
 # CMD padrão, Railway definirá a variável de ambiente PORT
-CMD /usr/local/bin/daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
+CMD /usr/local/bin/daphne -b 0.0.0.0 -p ${PORT:-8080} core.asgi:application
 
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
