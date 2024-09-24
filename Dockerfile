@@ -8,7 +8,8 @@ ENV LANG=pt_BR.UTF-8 \
     LANGUAGE=pt_BR.UTF-8 \
     LC_ALL=pt_BR.UTF-8 \
     PYTHONUNBUFFERED=1 \
-    PORT=8000  # Railway definirá a porta correta no momento da execução
+    PORT=8000  
+    # Railway definirá a porta correta no momento da execução
 
 # Atualiza lista de pacotes e instala apt-transport-https
 RUN apt-get update && \
