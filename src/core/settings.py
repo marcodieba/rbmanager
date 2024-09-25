@@ -17,6 +17,8 @@ import dj_database_url
 from decouple import config, Csv
 from pathlib import Path
 
+from django.contrib.staticfiles.storage import ManifestStaticFilesStorage
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -162,11 +164,23 @@ STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'static')]
 # Diretório onde os arquivos coletados são armazenados (para produção)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# WhiteNoise settings
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# # WhiteNoise settings
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-WHITENOISE_MANIFEST_STRICT = False
+
+class CustomStaticFilesStorage(ManifestStaticFilesStorage):
+    def post_process(self, *args, **kwargs):
+        files_to_skip = ['.map']
+        filtered_post_process = super().post_process(*args, **kwargs)
+        return (
+            (name, hashed_name, processed)
+            for name, hashed_name, processed in filtered_post_process
+            if not any(file_ext in name for file_ext in files_to_skip)
+        )
+
+STATICFILES_STORAGE = 'path.to.CustomStaticFilesStorage'
+
 
 
 CSRF_TRUSTED_ORIGINS = [config('CSRF_TRUSTED_ORIGINS')]
