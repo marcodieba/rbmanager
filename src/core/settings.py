@@ -162,11 +162,7 @@ STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'static')]
 # Diretório onde os arquivos coletados são armazenados (para produção)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# WhiteNoise settings
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-
-WHITENOISE_SKIP_COMPRESS_EXTENSIONS = ('map',)
+STATICFILES_STORAGE = 'core.custom_storage.CustomStaticFilesStorage'
 
 
 CSRF_TRUSTED_ORIGINS = [config('CSRF_TRUSTED_ORIGINS')]
