@@ -162,6 +162,8 @@ STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'static')]
 # Diretório onde os arquivos coletados são armazenados (para produção)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+WHITENOISE_STATIC_FILE_EXCLUDE_EXTENSIONS = ['.map']
+
 STATICFILES_STORAGE = 'core.custom_storage.CustomStaticFilesStorage'
 
 
