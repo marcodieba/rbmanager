@@ -162,8 +162,8 @@ STATIC_ROOT = os.path.join(FRONTEND_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'core.custom_storage.CustomStaticFilesStorage'
 
 
-# # Diretório onde os arquivos estáticos são colocados
-# STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'static')]
+# Diretório onde os arquivos estáticos são colocados
+STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'static')]
 
 CSRF_TRUSTED_ORIGINS = [config('CSRF_TRUSTED_ORIGINS')]
 
