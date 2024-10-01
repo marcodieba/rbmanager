@@ -56,7 +56,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -156,16 +156,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Diretório onde os arquivos estáticos são colocados
-STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'static')]
-
 # Diretório onde os arquivos coletados são armazenados (para produção)
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(FRONTEND_DIR, 'staticfiles')
 
-# WHITENOISE_STATIC_FILE_EXCLUDE_EXTENSIONS = ['.map']
+STATICFILES_STORAGE = 'core.custom_storage.CustomStaticFilesStorage'
 
-# STATICFILES_STORAGE = 'core.custom_storage.CustomStaticFilesStorage'
 
+# # Diretório onde os arquivos estáticos são colocados
+# STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'static')]
 
 CSRF_TRUSTED_ORIGINS = [config('CSRF_TRUSTED_ORIGINS')]
 
