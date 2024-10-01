@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
-
+from whitenoise.storage import CompressedManifestStaticFilesStorage
 from dj_database_url import parse as dburl
 import dj_database_url
 
@@ -151,6 +151,14 @@ USE_L10N = True
 USE_TZ = True
 
 
+class CustomStaticFilesStorage(CompressedManifestStaticFilesStorage):
+    def hashed_name(self, name, content=None, filename=None):
+        try:
+            return super().hashed_name(name, content, filename)
+        except ValueError:
+            # Se o arquivo não existir, retornamos o nome original sem falhar
+            return name
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
@@ -159,7 +167,8 @@ STATIC_URL = '/static/'
 # Diretório onde os arquivos coletados são armazenados (para produção)
 STATIC_ROOT = os.path.join(FRONTEND_DIR, 'staticfiles')
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'CustomStaticFilesStorage.settings.CustomStaticFilesStorage'
 
 
 # Diretório onde os arquivos estáticos são colocados
