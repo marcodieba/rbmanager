@@ -159,11 +159,16 @@ STATIC_URL = '/static/'
 # Diretório onde os arquivos coletados são armazenados (para produção)
 STATIC_ROOT = os.path.join(FRONTEND_DIR, 'staticfiles')
 
-STATICFILES_STORAGE = 'core.custom_storage.CustomStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Diretório onde os arquivos estáticos são colocados
 STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'static')]
+
+WHITENOISE_ALLOW_ALL_ORIGINS = True
+WHITENOISE_MAX_AGE = 31536000  # Cache de longo prazo (um ano)
+
+
 
 CSRF_TRUSTED_ORIGINS = [config('CSRF_TRUSTED_ORIGINS')]
 
