@@ -53,4 +53,4 @@ CMD /usr/local/bin/daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
 COPY --chown=srv:srv ./src /srv
 
 # Executa o collectstatic no build
-RUN python manage.py collectstatic --noinput
+# RUN python manage.py collectstatic --noinput
