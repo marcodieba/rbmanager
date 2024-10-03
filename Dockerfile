@@ -1,7 +1,7 @@
-# Use a imagem base Debian
+# Use a imagem base Python
 FROM python:3.9
 
-# Definir argumentos e variáveis de ambiente
+# Definir variáveis de ambiente
 ARG DEBIAN_FRONTEND=noninteractive
 
 ENV LANG=pt_BR.UTF-8 \
@@ -11,11 +11,7 @@ ENV LANG=pt_BR.UTF-8 \
     # Railway definirá a porta correta no momento da execução
     PORT=8000
 
-# Atualiza lista de pacotes e instala apt-transport-https
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends apt-transport-https
-
-# Instala pacotes necessários
+# Atualiza lista de pacotes e instala dependências necessárias
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         apt-utils \
@@ -27,8 +23,6 @@ RUN apt-get update && \
         python3-setuptools \
         gettext \
         libpq-dev && \
-    python3 -m pip install --upgrade pip && \
-    python3 -m pip install pipenv && \
     echo "$LANG UTF-8" > /etc/locale.gen && \
     locale-gen
 
@@ -39,15 +33,15 @@ RUN useradd -m -d /srv srv
 WORKDIR /srv
 RUN chown -R srv:srv /srv
 
-# Instala as dependências Python usando Pipenv
-COPY --chown=srv Pipfile Pipfile.lock /srv/
-RUN pipenv install --system --deploy --ignore-pipfile && \
-    rm -f /srv/Pipfile*
+# Copia os arquivos de dependências
+COPY --chown=srv:srv requirements.txt /srv/
 
-RUN pip install gunicorn
-RUN pipenv install psycopg
-RUN pip install daphne
-RUN pip install whitenoise
+# Instala as dependências Python
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Instala pacotes adicionais
+RUN pip install gunicorn daphne whitenoise psycopg2
 
 # Usa o Dumb-init como entrypoint
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
@@ -58,4 +52,5 @@ CMD /usr/local/bin/daphne -b 0.0.0.0 -p ${PORT:-8000} core.asgi:application
 # Copia o código fonte da aplicação
 COPY --chown=srv:srv ./src /srv
 
-# RUN pipenv run python manage.py collectstatic --noinput
+# Executa o collectstatic no build
+RUN python manage.py collectstatic --noinput
