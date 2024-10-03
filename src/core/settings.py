@@ -168,7 +168,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(FRONTEND_DIR, 'staticfiles')
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_STORAGE = 'CustomStaticFilesStorage.settings.CustomStaticFilesStorage'
+STATICFILES_STORAGE = 'core.settings.CustomStaticFilesStorage'
 
 
 # Diretório onde os arquivos estáticos são colocados
