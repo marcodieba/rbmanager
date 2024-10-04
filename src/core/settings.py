@@ -172,7 +172,7 @@ STATICFILES_STORAGE = 'core.settings.CustomStaticFilesStorage'
 
 
 # Diretório onde os arquivos estáticos são colocados
-STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, '/static/')]
+STATICFILES_DIRS = [os.path.join(FRONTEND_DIR, 'static')]
 
 WHITENOISE_ALLOW_ALL_ORIGINS = True
 WHITENOISE_MAX_AGE = 31536000  # Cache de longo prazo (um ano)
