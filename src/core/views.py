@@ -45,7 +45,7 @@ def controle(request):
     
     vendas_mes = 0
     vendas_ano = 0
-    mes = Financeiro.objects.filter(data__year=ano)
+    mes = Financeiro.objects.filter(data__year=ano).aggregate(saida=Sum('saida'))
     gastos = 0
     mortes = 0
 
@@ -180,6 +180,7 @@ def controle(request):
     context = {
                 # 'total_entrada':total_entrada,
                 'gastos': gastos,
+                'mes':mes,
                 'vendas_ano':vendas_ano,
                 'vendas_mes':vendas_mes,
                 'fazenda_nome':fazenda_nome,
