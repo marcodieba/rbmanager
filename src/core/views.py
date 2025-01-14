@@ -87,11 +87,11 @@ def controle(request):
     data_nascimento_10 = ''
     data_nascimento_11 = ''
     data_nascimento_12 = ''
-    for obj in mes:
-        # total_entrada = Financeiro.objects.aggregate(entrada=Sum('entrada'))
-        gastos = float(gastos) + float(obj.saida)
-    # gastos = locale.currency(gastos, grouping=True ) valor como moeda
-    gastos = gastos
+    # for obj in mes:
+    #     # total_entrada = Financeiro.objects.aggregate(entrada=Sum('entrada'))
+    #     gastos = float(gastos) + float(obj.saida)
+    # # gastos = locale.currency(gastos, grouping=True ) valor como moeda
+    # gastos = gastos
     # print(gasto)
     for venda in animais:
         if venda.tipo_movimento_id == 1:
@@ -179,7 +179,7 @@ def controle(request):
     grafico_data =['Jan', 'Fev', 'Mar', 'Mai', 'Abr', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
     context = {
                 # 'total_entrada':total_entrada,
-                'gastos': gastos,
+                # 'gastos': gastos,
                 'mes':mes,
                 'vendas_ano':vendas_ano,
                 'vendas_mes':vendas_mes,
