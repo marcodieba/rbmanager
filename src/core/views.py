@@ -45,7 +45,7 @@ def controle(request):
     
     vendas_mes = 0
     vendas_ano = 0
-    mes = Financeiro.objects.aggregate(saida=Sum('saida')).filter(data__year=ano)
+    mes = Financeiro.objects.filter(data__year=ano).aggregate(Sum('saida'))
     gastos = 0
     mortes = 0
 
