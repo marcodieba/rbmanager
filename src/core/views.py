@@ -91,7 +91,7 @@ def controle(request):
         # total_entrada = Financeiro.objects.aggregate(entrada=Sum('entrada'))
         gastos = float(gastos) + float(obj.saida)
     # gastos = locale.currency(gastos, grouping=True ) valor como moeda
-    gastos = gastos
+    gastos = f"{gastos:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
     # print(gasto)
     for venda in animais:
         if venda.tipo_movimento_id == 1:
