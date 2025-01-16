@@ -16,7 +16,7 @@ locale.setlocale( locale.LC_ALL, '' )
 @login_required(login_url="admin/login/")
 def controle(request):
     data = date.today()
-    ano = request.GET.get('filter_ano')
+    ano = request.GET.get('filter_ano') if request.GET.get('filter_ano') else data.year
     mes = request.GET.get('filter_mes')
     grafico_venda = []
     grafico_data = []
