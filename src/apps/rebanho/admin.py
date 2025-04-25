@@ -17,7 +17,7 @@ class MovimentoAdmin(admin.ModelAdmin):
     pass
 
 class QuantidadeAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('fazenda', 'animal', 'tipo_movimento', 'data')
 
 
 admin.site.register(Fazenda, FazendaAdmin)
