@@ -18,6 +18,7 @@ class MovimentoAdmin(admin.ModelAdmin):
 
 class QuantidadeAdmin(admin.ModelAdmin):
     list_display = ('fazenda', 'animal', 'tipo_movimento', 'data')
+    search_fields = ['fazenda', 'data']
 
 
 admin.site.register(Fazenda, FazendaAdmin)
