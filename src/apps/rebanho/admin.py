@@ -8,7 +8,7 @@ class FazendaAdmin(admin.ModelAdmin):
 	# 	(None, {'fields':['title','description','video','created_date']}),
 	# ]
 	# inlines = [ImagenEmpresaInline]
-    pass
+    search_fields = ['fazenda', 'data']
 
 class AnimalAdmin(admin.ModelAdmin):
     pass
