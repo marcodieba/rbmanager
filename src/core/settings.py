@@ -165,10 +165,12 @@ class CustomStaticFilesStorage(CompressedManifestStaticFilesStorage):
 STATIC_URL = '/static/'
 
 # Diretório onde os arquivos coletados são armazenados (para produção)
-STATIC_ROOT = os.path.join(FRONTEND_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(FRONTEND_DIR, 'staticfiles')
+STATIC_ROOT = '/srv/staticfiles'
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_STORAGE = 'core.settings.CustomStaticFilesStorage'
+# STATICFILES_STORAGE = 'core.settings.CustomStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 
 # Diretório onde os arquivos estáticos são colocados

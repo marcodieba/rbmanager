@@ -6,10 +6,11 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from apps.rebanho.models import Animal, Quantidade, Fazenda
 from apps.rebanho.forms import *
-from datetime import date
 from django.db.models import Count, Sum, F, Q
 import locale
 import json
+from datetime import date, datetime, timedelta
+
 locale.setlocale(locale.LC_ALL, '')
 
 # ARIA DE ENTRADA E SAIDA DE ANIMAIS
@@ -65,12 +66,21 @@ def rebanho(request):
 
     return render(request, 'rebanho.html', context)
 
-# RELATORIO REBANHO
+
 @login_required(login_url="admin/login/")
 def relrebanho(request):
     hoje = date.today()
-    semana = date.fromordinal(hoje.toordinal() - 6)
-    semana_anterior = date.fromordinal(hoje.toordinal() - 12)
+    semana = hoje - timedelta(days=6)
+
+    data_filtro_str = request.GET.get('data')
+    data_filtro = None
+
+    if data_filtro_str:
+        try:
+            data_filtro = datetime.strptime(data_filtro_str, '%Y-%m-%d').date()
+        except:
+            data_filtro = None
+
     fazendas = Fazenda.objects.all()
     rebanho = Animal.objects.all()
     dados = []
@@ -79,32 +89,69 @@ def relrebanho(request):
 
     for fazenda in fazendas:
         total_p_fazenda = queryset.filter(fazenda=fazenda)
+
         total_fazenda_entrada = total_p_fazenda.aggregate(Sum('entrada'))['entrada__sum'] or 0
         total_fazenda_saida = total_p_fazenda.aggregate(Sum('saida'))['saida__sum'] or 0
         total_fazenda = total_fazenda_entrada - total_fazenda_saida
 
         for tipo_animal in rebanho:
             movimento_total = total_p_fazenda.filter(animal=tipo_animal)
+
             if movimento_total.exists():
-                total_entrada_semana = movimento_total.filter(data__range=[semana, hoje]).aggregate(Sum('entrada'))['entrada__sum'] or 0
-                total_saida_semana = movimento_total.filter(data__range=[semana, hoje]).aggregate(Sum('saida'))['saida__sum'] or 0
-                data = [dt.data for dt in queryset]
-                total_entrada = movimento_total.aggregate(Sum('entrada'))['entrada__sum'] or 0
-                total_saida = movimento_total.aggregate(Sum('saida'))['saida__sum'] or 0
-                total_anterior = total_entrada - total_saida - (total_entrada_semana - total_saida_semana)
-                total = total_entrada - total_saida
+
+                if data_filtro:
+
+                    movimento_dia = movimento_total.filter(data=data_filtro)
+
+                    total_entrada_periodo = movimento_dia.aggregate(Sum('entrada'))['entrada__sum'] or 0
+                    total_saida_periodo = movimento_dia.aggregate(Sum('saida'))['saida__sum'] or 0
+
+                    # 🔥 AGORA CORRETO → saldo ATÉ a data filtrada
+                    total_entrada_ate_data = movimento_total.filter(
+                        data__lte=data_filtro
+                    ).aggregate(Sum('entrada'))['entrada__sum'] or 0
+
+                    total_saida_ate_data = movimento_total.filter(
+                        data__lte=data_filtro
+                    ).aggregate(Sum('saida'))['saida__sum'] or 0
+
+                    total = total_entrada_ate_data - total_saida_ate_data
+
+                    # 🔥 anterior continua correto
+                    total_anterior = total - total_entrada_periodo + total_saida_periodo
+
+                    data_exibida = data_filtro
+
+                else:
+                    total_entrada_periodo = movimento_total.filter(
+                        data__range=[semana, hoje]
+                    ).aggregate(Sum('entrada'))['entrada__sum'] or 0
+
+                    total_saida_periodo = movimento_total.filter(
+                        data__range=[semana, hoje]
+                    ).aggregate(Sum('saida'))['saida__sum'] or 0
+
+                    total_entrada_total = movimento_total.aggregate(Sum('entrada'))['entrada__sum'] or 0
+                    total_saida_total = movimento_total.aggregate(Sum('saida'))['saida__sum'] or 0
+
+                    total_anterior = total_entrada_total - total_saida_total - (total_entrada_periodo - total_saida_periodo)
+                    total = total_entrada_total - total_saida_total
+
+                    data_exibida = movimento_total.order_by('-data').values_list('data', flat=True).first()
+
             else:
-                total_entrada_semana = 0
-                total_saida_semana = 0
+                total_entrada_periodo = 0
+                total_saida_periodo = 0
                 total_anterior = 0
                 total = 0
+                data_exibida = None
 
             dados.append({
-                'data': data[-1],
+                'data': data_exibida,
                 'fazenda_filtro': fazenda.fazenda,
                 'animal': tipo_animal.animal,
-                'total_entrada': total_entrada_semana,
-                'total_saida': total_saida_semana,
+                'total_entrada': total_entrada_periodo,
+                'total_saida': total_saida_periodo,
                 'faz': 'faz',
                 'total_anterior': total_anterior,
                 'total': total,
@@ -113,6 +160,7 @@ def relrebanho(request):
 
     context = {
         'dados': dados,
+        'data_filtro': data_filtro
     }
 
     return render(request, 'rebanho_imp.html', context)

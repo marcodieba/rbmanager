@@ -9,6 +9,29 @@
 <div class="card mb-4">
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">Controle Reabanho</h6>
+    <form method="get" class="mb-3 no-print">
+  <div style="display:flex; gap:10px; align-items:center;">
+    
+    <label><strong>Filtrar por data:</strong></label>
+    
+    <input 
+      type="date" 
+      name="data" 
+      value="{{ data_filtro|date:'Y-m-d' }}"
+      class="form-control"
+      style="max-width:200px;"
+    >
+
+    <button type="submit" class="btn btn-sm btn-success">
+      Filtrar
+    </button>
+
+    <a href="{% url 'relrebanho' %}" class="btn btn-sm btn-secondary">
+      Limpar
+    </a>
+
+  </div>
+</form>
   </div>
   <div class="card-body">
     <div class="table-container">
@@ -32,11 +55,9 @@
                 <td data-label="Data">{{obj.data|date:"d/m/Y"}}</td>
                 <td data-label="Fazenda">{{obj.fazenda_filtro}}</td>
                 <td data-label="Animal">{{obj.animal}}</td>
-                {% if obj.total_entrada.q or obj.total_saida.q %}
-                  <td data-label="Qt.Anterior" class="qtanterior">{{obj.faz.total_entrada}}</td>
-                {% else %}
-                  <td data-label="Qt.Anterior" class="qtanterior">{{obj.total_anterior}}</td>
-                {% endif %}
+                <td data-label="Qt.Anterior" class="qtanterior">
+                  {{ obj.total_anterior }}
+                </td>
                 <td data-label="Entrada" class="qtentradat">{{obj.total_entrada}}</td>
                 <td data-label="Saida" class="qtsaidat">{{obj.total_saida}}</td>
                 <td data-label="Qt.Hoje" class="qttotal">{{obj.total}}</td>
