@@ -10,24 +10,32 @@
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">Controle Reabanho</h6>
     <form method="get" class="mb-3 no-print">
-      <div style="display:flex; gap:10px; align-items:center;">
-        <label><strong>Filtrar por data:</strong></label>
-        <input
-          type="date"
-          name="data"
-          value="{{ data_filtro|date:'Y-m-d' }}"
-          class="form-control"
-          style="max-width:200px;"
-        >
-        <button type="submit" class="btn btn-sm btn-success">Filtrar</button>
-        <a href="{% url 'relrebanho' %}" class="btn btn-sm btn-secondary">Limpar</a>
-      </div>
-    </form>
-  </div>
+  <div style="display:flex; gap:10px; align-items:center;">
+    
+    <label><strong>Filtrar por data:</strong></label>
+    
+    <input 
+      type="date" 
+      name="data" 
+      value="{{ data_filtro|date:'Y-m-d' }}"
+      class="form-control"
+      style="max-width:200px;"
+    >
 
+    <button type="submit" class="btn btn-sm btn-success">
+      Filtrar
+    </button>
+
+    <a href="{% url 'relrebanho' %}" class="btn btn-sm btn-secondary">
+      Limpar
+    </a>
+
+  </div>
+</form>
+  </div>
   <div class="card-body">
     <div class="table-container">
-      <table class="responsive-table" id="tabelaRebanho">
+      <table class="responsive-table">
         <thead>
           <tr>
             <th>Data</th>
@@ -46,8 +54,10 @@
               <tr>
                 <td data-label="Data">{{obj.data|date:"d/m/Y"}}</td>
                 <td data-label="Fazenda">{{obj.fazenda_filtro}}</td>
-                <td data-label="Animal" class="animal-nome">{{obj.animal}}</td>
-                <td data-label="Qt.Anterior" class="qtanterior">{{ obj.total_anterior }}</td>
+                <td data-label="Animal" class="animal-totalizador">{{obj.animal}}</td>
+                <td data-label="Qt.Anterior" class="qtanterior">
+                  {{ obj.total_anterior }}
+                </td>
                 <td data-label="Entrada" class="qtentradat">{{obj.total_entrada}}</td>
                 <td data-label="Saida" class="qtsaidat">{{obj.total_saida}}</td>
                 <td data-label="Qt.Hoje" class="qttotal">{{obj.total}}</td>
@@ -59,7 +69,6 @@
                         <td class="text-center" style="border-bottom:1px solid #ccc; color:#fff; padding:0px; background:#000;">Total: <span>{{ obj.total_fazenda }}</span></td>
                       </tr>
                     </tbody>
-                    <tbody>
                 {% endif %}
               </tr>
             {% endif %}
@@ -74,21 +83,12 @@
           <td id="qtdsaida"></td>
           <td id="qtdtotal"></td>
         </tr>
+        <tr>
+          <td colspan="7" class="text-center" style="border-top:2px solid #000; font-weight:bold;">
+            Total por animal: <span id="totaisPorAnimal"></span>
+          </td>
+        </tr>
         </tbody>
-      </table>
-    </div>
-
-    <!-- Totalizador agrupado por tipo de animal -->
-    <div class="mt-4">
-      <h6 class="font-weight-bold text-primary">Totalizador por animal</h6>
-      <table class="responsive-table" id="totalizadorAnimal">
-        <thead>
-          <tr>
-            <th>Animal</th>
-            <th>Total</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
       </table>
     </div>
   </div>
@@ -96,74 +96,67 @@
 <script src="{% static 'static_rebanho/vendor/jquery/jquery.min.js' %}"></script>
 <script type="text/javascript">
   $(function(){
-    var valorCalculado = 0;
-    var qtsaida = 0;
-    var qtentrada = 0;
-    var qtanterior = 0;
-    var totaisPorAnimal = {};
+     var valorCalculado = 0;
+     var qtsaida = 0;
+     var qtentrada = 0;
+     var qtanterior = 0;
+     var totaisPorAnimal = {};
 
-    $("#tabelaRebanho tbody tr").each(function() {
-      var linha = $(this);
-      var nomeAnimal = $.trim(linha.find(".animal-nome").text());
-      var totalHoje = parseInt(linha.find(".qttotal").text(), 10) || 0;
+     $(".qttotal").each(function() {
+       var linha = $(this).closest("tr");
+       var animal = $.trim(linha.find(".animal-totalizador").text());
+       var totalAnimal = parseInt($(this).text(), 10) || 0;
 
-      // Ignora a linha final de totais, que não possui animal.
-      if (nomeAnimal) {
-        if (!totaisPorAnimal[nomeAnimal]) {
-          totaisPorAnimal[nomeAnimal] = 0;
-        }
-        totaisPorAnimal[nomeAnimal] += totalHoje;
-      }
-    });
+       if (animal) {
+         totaisPorAnimal[animal] = (totaisPorAnimal[animal] || 0) + totalAnimal;
+       }
+       valorCalculado += totalAnimal;
+     });
 
-    Object.keys(totaisPorAnimal).sort().forEach(function(animal) {
-      $("#totalizadorAnimal tbody").append(
-        "<tr><td data-label=\"Animal\">" + animal +
-        "</td><td data-label=\"Total\" class=\"total-por-animal\">" +
-        totaisPorAnimal[animal] + "</td></tr>"
-      );
-    });
+     var resumoPorAnimal = [];
+     $.each(totaisPorAnimal, function(animal, total) {
+       resumoPorAnimal.push(animal + ": " + total);
+     });
+     $("#totaisPorAnimal").text(resumoPorAnimal.join(" | "));
+     $(".qtsaidat").each(function() {
+       qtsaida += parseInt($(this).text());
+     });
+     $(".qtentradat").each(function() {
+       qtentrada += parseInt($(this).text());
+     });
+     $(".qtanterior").each(function() {
+       qtanterior += parseInt($(this).text());
+     });
+     $("#qtdtotal").text(valorCalculado);
+     $("#qtdsaida").text(qtsaida);
+     $("#qtdentrada").text(qtentrada);
+     $("#qtdanterior").text(qtanterior);
+   });
 
-    $(".qttotal").each(function() {
-      valorCalculado += parseInt($(this).text(), 10) || 0;
-    });
-    $(".qtsaidat").each(function() {
-      qtsaida += parseInt($(this).text(), 10) || 0;
-    });
-    $(".qtentradat").each(function() {
-      qtentrada += parseInt($(this).text(), 10) || 0;
-    });
-    $(".qtanterior").each(function() {
-      qtanterior += parseInt($(this).text(), 10) || 0;
-    });
+   // Remover linhas que têm valores zerados
+   $(document).ready(function(){
+     $("tr").each(function() {
+       var total_anterior = parseInt($(this).find(".qtanterior").text());
+       var total_entrada = parseInt($(this).find(".qtentradat").text());
+       var total_saida = parseInt($(this).find(".qtsaidat").text());
+       var total = parseInt($(this).find(".qttotal").text());
 
-    $("#qtdtotal").text(valorCalculado);
-    $("#qtdsaida").text(qtsaida);
-    $("#qtdentrada").text(qtentrada);
-    $("#qtdanterior").text(qtanterior);
-  });
-
-  // Remover linhas que têm valores zerados
-  $(document).ready(function(){
-    $("#tabelaRebanho tbody tr").each(function() {
-      var total_anterior = parseInt($(this).find(".qtanterior").text(), 10) || 0;
-      var total_entrada = parseInt($(this).find(".qtentradat").text(), 10) || 0;
-      var total_saida = parseInt($(this).find(".qtsaidat").text(), 10) || 0;
-      var total = parseInt($(this).find(".qttotal").text(), 10) || 0;
-
-      if (total_anterior === 0 && total_entrada === 0 && total_saida === 0 && total === 0) {
-        $(this).remove();
-      }
-    });
-  });
+       if (total_anterior === 0 && total_entrada === 0 && total_saida === 0 && total === 0) {
+         $(this).remove();
+       }
+     });
+   });
 </script>
 <script>
  function printDiv(divName) {
-   var printContents = document.getElementById(divName).innerHTML;
-   var originalContents = document.body.innerHTML;
-   document.body.innerHTML = printContents;
-   window.print();
-   document.body.innerHTML = originalContents;
+ var printContents = document.getElementById(divName).innerHTML;
+ var originalContents = document.body.innerHTML;
+
+ document.body.innerHTML = printContents;
+
+ window.print();
+
+ document.body.innerHTML = originalContents;
  }
 </script>
 {% endblock %}
