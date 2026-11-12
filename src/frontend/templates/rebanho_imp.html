@@ -48,32 +48,33 @@
           </tr>
         </thead>
 
-        <tbody>
+        <tbody id="linhas-rebanho">
           {% for obj in dados %}
             {% if obj.animal != 'TOURO' and obj.animal != 'NOVILHA' %}
               {% if obj.total_anterior != 0 or obj.total_entrada != 0 or obj.total_saida != 0 or obj.total != 0 %}
                 <tr class="linha-animal">
                   <td data-label="Data">{{ obj.data|date:"d/m/Y" }}</td>
-                  <td data-label="Fazenda">{{ obj.fazenda_filtro }}</td>
+                  <td data-label="Fazenda" class="nome-fazenda">{{ obj.fazenda_filtro }}</td>
                   <td data-label="Animal" class="tipo-animal">{{ obj.animal }}</td>
-                  <td data-label="Qt. Anterior" class="qtanterior">{{ obj.total_anterior|default_if_none:0 }}</td>
-                  <td data-label="Entrada" class="qtentrada">{{ obj.total_entrada|default_if_none:0 }}</td>
-                  <td data-label="Saída" class="qtsaida">{{ obj.total_saida|default_if_none:0 }}</td>
-                  <td data-label="Qt. Hoje" class="qttotal">{{ obj.total|default_if_none:0 }}</td>
+                  <td data-label="Qt. Anterior" class="qtanterior">
+                    {{ obj.total_anterior|default_if_none:0 }}
+                  </td>
+                  <td data-label="Entrada" class="qtentrada">
+                    {{ obj.total_entrada|default_if_none:0 }}
+                  </td>
+                  <td data-label="Saída" class="qtsaida">
+                    {{ obj.total_saida|default_if_none:0 }}
+                  </td>
+                  <td data-label="Qt. Hoje" class="qttotal">
+                    {{ obj.total|default_if_none:0 }}
+                  </td>
                 </tr>
-
-                {% if obj.animal == 'VACA' %}
-                  <tr class="subtotal-fazenda">
-                    <td colspan="6" style="border-bottom:1px solid #ccc; background:#000;"></td>
-                    <td class="text-center" style="border-bottom:1px solid #ccc; color:#fff; padding:0; background:#000;">
-                      Total da fazenda: <span>{{ obj.total_fazenda }}</span>
-                    </td>
-                  </tr>
-                {% endif %}
               {% endif %}
             {% endif %}
           {% endfor %}
+        </tbody>
 
+        <tbody id="totais-rebanho">
           <tr class="titulo-total-geral">
             <th colspan="7" style="background:#343a40; color:#fff; text-align:left;">
               Total geral por tipo de animal
@@ -90,21 +91,36 @@
 
 <script>
   $(function () {
-    function lerNumero(valor) {
-      var numero = parseInt(String(valor).trim(), 10);
-      return isNaN(numero) ? 0 : numero;
+    function numeroDoTexto(texto) {
+      var valor = parseInt(String(texto).trim(), 10);
+      return isNaN(valor) ? 0 : valor;
     }
 
-    var totais = {};
+    var linhas = $("#linhas-rebanho tr.linha-animal").toArray();
+    var totaisPorAnimal = {};
+    var fazendas = {};
 
-    $("#tabela-rebanho tbody tr.linha-animal").each(function () {
-      var linha = $(this);
+    /*
+     * Agrupa por fazenda, independentemente da ordem em que
+     * as linhas das fazendas aparecem na tabela.
+     */
+    linhas.forEach(function (elemento) {
+      var linha = $(elemento);
+      var fazenda = linha.find(".nome-fazenda").text().trim();
       var animal = linha.find(".tipo-animal").text().trim();
 
-      if (!animal) return;
+      if (!fazendas[fazenda]) {
+        fazendas[fazenda] = {
+          linhas: [],
+          total: 0
+        };
+      }
 
-      if (!totais[animal]) {
-        totais[animal] = {
+      fazendas[fazenda].linhas.push(elemento);
+      fazendas[fazenda].total += numeroDoTexto(linha.find(".qttotal").text());
+
+      if (!totaisPorAnimal[animal]) {
+        totaisPorAnimal[animal] = {
           anterior: 0,
           entrada: 0,
           saida: 0,
@@ -112,27 +128,77 @@
         };
       }
 
-      totais[animal].anterior += lerNumero(linha.find(".qtanterior").text());
-      totais[animal].entrada += lerNumero(linha.find(".qtentrada").text());
-      totais[animal].saida += lerNumero(linha.find(".qtsaida").text());
-      totais[animal].total += lerNumero(linha.find(".qttotal").text());
+      totaisPorAnimal[animal].anterior += numeroDoTexto(linha.find(".qtanterior").text());
+      totaisPorAnimal[animal].entrada += numeroDoTexto(linha.find(".qtentrada").text());
+      totaisPorAnimal[animal].saida += numeroDoTexto(linha.find(".qtsaida").text());
+      totaisPorAnimal[animal].total += numeroDoTexto(linha.find(".qttotal").text());
+    });
+
+    /*
+     * Reorganiza as linhas para manter cada fazenda agrupada,
+     * adicionando seu subtotal logo após suas linhas.
+     */
+    var corpo = $("#linhas-rebanho");
+
+    Object.keys(fazendas).forEach(function (fazenda) {
+      fazendas[fazenda].linhas.forEach(function (linha) {
+        corpo.append(linha);
+      });
+
+      var subtotal = $("<tr>", {
+        "class": "subtotal-fazenda"
+      });
+
+      subtotal.append(
+        $("<td>", {
+          colspan: 6,
+          style: "border-bottom:1px solid #ccc; background:#000;"
+        })
+      );
+
+      subtotal.append(
+        $("<td>", {
+          "class": "text-center",
+          style: "border-bottom:1px solid #ccc; color:#fff; padding:0; background:#000;"
+        }).text("Total da fazenda: " + fazendas[fazenda].total)
+      );
+
+      corpo.append(subtotal);
     });
 
     var corpoTotais = $("#totais-por-animal");
 
-    Object.keys(totais).sort().forEach(function (animal) {
-      var t = totais[animal];
+    Object.keys(totaisPorAnimal).sort().forEach(function (animal) {
+      var total = totaisPorAnimal[animal];
+      var linhaTotal = $("<tr>", {
+        "class": "total-animal"
+      });
 
-      corpoTotais.append(
-        "<tr class='total-animal'>" +
-          "<th colspan='3'>Total " + $("<div>").text(animal).html() + "</th>" +
-          "<td>" + t.anterior + "</td>" +
-          "<td>" + t.entrada + "</td>" +
-          "<td>" + t.saida + "</td>" +
-          "<td>" + t.total + "</td>" +
-        "</tr>"
+      linhaTotal.append(
+        $("<th>", {
+          colspan: 3,
+          scope: "row"
+        }).text("Total geral — " + animal)
       );
+
+      linhaTotal.append($("<td>").text(total.anterior));
+      linhaTotal.append($("<td>").text(total.entrada));
+      linhaTotal.append($("<td>").text(total.saida));
+      linhaTotal.append($("<td>").text(total.total));
+
+      corpoTotais.append(linhaTotal);
     });
   });
+</script>
+
+<script>
+  function printDiv(divName) {
+    var printContents = document.getElementById(divName).innerHTML;
+    var originalContents = document.body.innerHTML;
+
+    document.body.innerHTML = printContents;
+    window.print();
+    document.body.innerHTML = originalContents;
+  }
 </script>
 {% endblock %}
